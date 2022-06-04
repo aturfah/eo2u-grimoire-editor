@@ -1,0 +1,1266 @@
+HP Up 	2	002
+TP Up 	3	003
+Phys ATK Up 	4	004
+Phys DEF Up 	5	005
+Sword Mastery 	6	006
+Axe Mastery 	7	007
+Fencer 	8	008
+Double Attack 	9	009
+War Cry 	10	00A
+Swordbreaker 	11	00B
+Triple Charge 	12	00C
+Raging Edge 	13	00D
+Tornado 	14	00E
+Falcon Slash 	15	00F
+Blinding Slash 	16	010
+Hurricane 	17	011
+Boomerang Axe 	18	012
+Stunning Smash 	19	013
+Head Bash 	20	014
+Charge Smash 	21	015
+Heavy Smash 	22	016
+Fire Chaser 	23	017
+Ice Chaser 	24	018
+Volt Chaser 	25	019
+Mine 	26	01A
+Full Charge 	27	01B
+Full Gain 	28	01C
+DUMMY 	29	01D
+DUMMY 	30	01E
+DUMMY 	31	01F
+HP Up 	32	020
+TP Up 	33	021
+Curb ATK Up 	34	022
+Speed Up 	35	023
+Bow Mastery 	36	024
+Sneak Attack 	37	025
+Disabling Shot 	38	026
+Efficiency 	39	027
+Multi-Shot 	40	028
+Chain Dance 	41	029
+Scapegoat 	42	02A
+Trick Step 	43	02B
+Swap Step 	44	02C
+Blind Arrow 	45	02D
+Sleep Arrow 	46	02E
+Paralysis Arrow 	47	02F
+Flank Shot 	48	030
+Drop Shot 	49	031
+Sagittarius Shot 	50	032
+Hazy Arrow 	51	033
+Resuscitate 	52	034
+Owl-Eye 	53	035
+Risk Perception 	54	036
+Stalker 	55	037
+Natural Instinct 	56	038
+Illusion Step 	57	039
+Summer Rain 	58	03A
+DUMMY 	59	03B
+DUMMY 	60	03C
+DUMMY 	61	03D
+HP Up 	62	03E
+TP Up 	63	03F
+Phys DEF Up 	64	040
+Elem DEF Up 	65	041
+Pre-Provoke 	66	042
+Shield Mastery 	67	043
+Aegis 	68	044
+Parry 	69	045
+Fortify 	70	046
+Provoke 	71	047
+Line Heal 	72	048
+Line Cure 	73	049
+Armor of Light 	74	04A
+Keep Guard 	75	04B
+Heal Guard 	76	04C
+Front Guard 	77	04D
+Rear Guard 	78	04E
+Fire Wall 	79	04F
+Ice Wall 	80	050
+Volt Wall 	81	051
+Sentinel Guard 	82	052
+Shield Smite 	83	053
+Shield Rush 	84	054
+Flee 	85	055
+Mine 	86	056
+Shield Protect 	87	057
+Perfect Defense 	88	058
+DUMMY 	89	059
+DUMMY 	90	05A
+DUMMY 	91	05B
+HP Up 	92	05C
+TP Up 	93	05D
+Phys ATK Up 	94	05E
+Curb ATK Up 	95	05F
+Sword Mastery 	96	060
+Whip Mastery 	97	061
+Perseverance 	98	062
+Snake Eyes 	99	063
+Bind Heart 	100	064
+Temptation 	101	065
+Gag 	102	066
+Cuffs 	103	067
+Shackles 	104	068
+Ecstasy 	105	069
+Viper 	106	06A
+Crimson Rouge 	107	06B
+Hypno Bite 	108	06C
+Nerve Bite 	109	06D
+Mirage Bite 	110	06E
+Soul Liberator 	111	06F
+Drain Bite 	112	070
+Scorpion 	113	071
+Attack Bait 	114	072
+Elemental Bait 	115	073
+Chop 	116	074
+Trance 	117	075
+Rose Prison 	118	076
+DUMMY 	119	077
+DUMMY 	120	078
+DUMMY 	121	079
+HP Up 	122	07A
+TP Up 	123	07B
+Phys ATK Up 	124	07C
+Elem DEF Up 	125	07D
+Final Gift 	126	07E
+Heal Mastery 	127	07F
+Staff Mastery 	128	080
+Scavenge 	129	081
+Cure 	130	082
+Salve 	131	083
+Healing 	132	084
+Line Heal 	133	085
+Salve 2 	134	086
+Chase Heal 	135	087
+Delayed Heal 	136	088
+Revive 	137	089
+Unbind 	138	08A
+Refresh 	139	08B
+High Regen 	140	08C
+Heavy Strike 	141	08D
+Vital Hit 	142	08E
+Medical Rod 	143	08F
+Overheal 	144	090
+Safe Passage 	145	091
+Take 	146	092
+Steady Hands 	147	093
+Medical Miracle 	148	094
+DUMMY 	149	095
+DUMMY 	150	096
+DUMMY 	151	097
+HP Up 	152	098
+TP Up 	153	099
+Elem ATK Up 	154	09A
+Elem DEF Up 	155	09B
+Formula Mastery 	156	09C
+Palm Mastery 	157	09D
+Additional Palm 	158	09E
+Splash Palm 	159	09F
+Fire Palm 	160	0A0
+Ice Palm 	161	0A1
+Volt Palm 	162	0A2
+Compression 	163	0A3
+Fire Formula 	164	0A4
+Flame Formula 	165	0A5
+Inferno Formula 	166	0A6
+Ice Formula 	167	0A7
+Freeze Formula 	168	0A8
+Cocytus Formula 	169	0A9
+Volt Formula 	170	0AA
+Spark Formula 	171	0AB
+Thor Formula 	172	0AC
+Nuclear Formula 	173	0AD
+Riot Formula 	174	0AE
+Sight Formula 	175	0AF
+Chop 	176	0B0
+Analysis 	177	0B1
+Eschaton 	178	0B2
+DUMMY 	179	0B3
+DUMMY 	180	0B4
+DUMMY 	181	0B5
+HP Up 	182	0B6
+TP Up 	183	0B7
+Speed Up 	184	0B8
+Holy Gift 	185	0B9
+Healing Rhythm 	186	0BA
+Song Mastery 	187	0BB
+Energy Ensemble 	188	0BC
+Life Ensemble 	189	0BD
+Skanda Ensemble 	190	0BE
+Reverb 	191	0BF
+Warrior Song 	192	0C0
+Shelter Song 	193	0C1
+Insight Melody 	194	0C2
+Lightfoot Melody 	195	0C3
+Health Requiem 	196	0C4
+Fire Prelude 	197	0C5
+Ice Prelude 	198	0C6
+Volt Prelude 	199	0C7
+Barbaric March 	200	0C8
+Flame Fantasia 	201	0C9
+Frost Fantasia 	202	0CA
+Shock Fantasia 	203	0CB
+Jovial March 	204	0CC
+Alluring Ballad 	205	0CD
+Take 	206	0CE
+War Song 	207	0CF
+Crusade 	208	0D0
+DUMMY 	209	0D1
+DUMMY 	210	0D2
+DUMMY 	211	0D3
+HP Up 	212	0D4
+TP Up 	213	0D5
+Phys ATK Up 	214	0D6
+Katana Mastery 	215	0D7
+Upper Stance 	216	0D8
+Clear Stance 	217	0D9
+Drawing Stance 	218	0DA
+Pre-Initiative 	219	0DB
+Upward Slash 	220	0DC
+Charging Thrust 	221	0DD
+Sheath Strike 	222	0DE
+Horse Slash 	223	0DF
+Flame Grater 	224	0E0
+Swallow Strike 	225	0E1
+Arm Strike 	226	0E2
+Lightning Stab 	227	0E3
+Moon Shadow 	228	0E4
+Beheading Cut 	229	0E5
+Frigid Slash 	230	0E6
+Ground Strike 	231	0E7
+Peerless Combo 	232	0E8
+Peerless Stance 	233	0E9
+Perfect Chaser 	234	0EA
+Post-Initiative 	235	0EB
+Mine 	236	0EC
+Immovable 	237	0ED
+Issen 	238	0EE
+DUMMY 	239	0EF
+DUMMY 	240	0F0
+DUMMY 	241	0F1
+HP Up 	242	0F2
+TP Up 	243	0F3
+Curb ATK Up 	244	0F4
+Curb DEF Up 	245	0F5
+Curse Mastery 	246	0F6
+Chained Benefit 	247	0F7
+Sapping Curse 	248	0F8
+Frailty Curse 	249	0F9
+Weakening Curse 	250	0FA
+Cranial Curse 	251	0FB
+Abdomen Curse 	252	0FC
+Immobile Curse 	253	0FD
+Venom Curse 	254	0FE
+Blinding Curse 	255	0FF
+Torpor Curse 	256	100
+Madness Curse 	257	101
+Corrupt Curse 	258	102
+Evil Eye 	259	103
+Suicide Word 	260	104
+Conflict Word 	261	105
+Shielding Word 	262	106
+Life Trade 	263	107
+Sacrifice 	264	108
+Reincarnate 	265	109
+Chop 	266	10A
+Creeping Curse 	267	10B
+Black Mist 	268	10C
+DUMMY 	269	10D
+DUMMY 	270	10E
+DUMMY 	271	10F
+HP Up 	272	110
+TP Up 	273	111
+Phys ATK Up 	274	112
+Phys DEF Up 	275	113
+Spear Mastery 	276	114
+Bloodlust 	277	115
+Turning Tide 	278	116
+Battle Instinct 	279	117
+Draining Thrust 	280	118
+Draining Burst 	281	119
+Legion Thrust 	282	11A
+Legion Burst 	283	11B
+Delayed Charge 	284	11C
+Cross Charge 	285	11D
+Long Thrust 	286	11E
+Head Pierce 	287	11F
+Spear Assist 	288	120
+Limitless 	289	121
+Stigmata 	290	122
+Black Sabbath 	291	123
+Blood Fortune 	292	124
+Mine 	293	125
+Allied Bonds 	294	126
+Spirit Shield 	295	127
+Bloody Offense 	296	128
+Hero Battle 	297	129
+Gae Bolg 	298	12A
+DUMMY 	299	12B
+DUMMY 	300	12C
+DUMMY 	301	12D
+HP Up 	302	12E
+TP Up 	303	12F
+Phys ATK Up 	304	130
+Gun Mastery 	305	131
+Cover Fire 	306	132
+Double Action 	307	133
+Preemptive Shell 	308	134
+Penetrator 	309	135
+Shell Shock 	310	136
+Act Quick 	311	137
+Point Blank 	312	138
+Medic Bullet 	313	139
+Head Snipe 	314	13A
+Arm Snipe 	315	13B
+Leg Snipe 	316	13C
+Fire Rounds 	317	13D
+Charged Fire 	318	13E
+Ice Rounds 	319	13F
+Charged Ice 	320	140
+Volt Rounds 	321	141
+Charged Volt 	322	142
+Ricochet 	323	143
+Charged Shot 	324	144
+Burst Shot 	325	145
+Take 	326	146
+Action Boost 	327	147
+Supreme Bolt 	328	148
+DUMMY 	329	149
+DUMMY 	330	14A
+DUMMY 	331	14B
+HP Up 	332	14C
+TP Up 	333	14D
+Phys ATK Up 	334	14E
+Curb DEF Up 	335	14F
+War Edge Mastery 	336	150
+War Lore Mastery 	337	151
+Vampire 	338	152
+War Heal 	339	153
+War Heal Line 	340	154
+War Heal All 	341	155
+War Response 	342	156
+Artery 	343	157
+War Revive 	344	158
+Displace 	345	159
+Warmight 	346	15A
+Rockskin 	347	15B
+Random Disease 	348	15C
+Barrier 	349	15D
+Ailing Slash 	350	15E
+Legcut 	351	15F
+Armcut 	352	160
+Headcut 	353	161
+Strength Slash 	354	162
+Guard Slash 	355	163
+Chop 	356	164
+War Edge Power 	357	165
+Fairy Robe 	358	166
+DUMMY 	359	167
+DUMMY 	360	168
+DUMMY 	361	169
+HP Up 	362	16A
+TP Up 	363	16B
+Phys ATK Up 	364	16C
+Phys DEF Up 	365	16D
+Deadly Resolve 	366	16E
+Auto-Lick 	367	16F
+Loyalty Mastery 	368	170
+Claw Mastery 	369	171
+Preemptive Roar 	370	172
+Lick Wounds 	371	173
+Self-Defense 	372	174
+Bull Charge 	373	175
+Endurance 	374	176
+Protect 	375	177
+Hit-Taker 	376	178
+Protection Vow 	377	179
+Beast Roar 	378	17A
+Berserk 	379	17B
+Beast Dance 	380	17C
+Savage Rush 	381	17D
+Tiger Blow 	382	17E
+Wolf Fang 	383	17F
+Comet Drop 	384	180
+Wildblow 	385	181
+Natural Instinct 	386	182
+Desperation 	387	183
+True Endurance 	388	184
+DUMMY 	389	185
+DUMMY 	390	186
+DUMMY 	391	187
+HP Up 	392	188
+TP Up 	393	189
+Curb DEF Up 	394	18A
+Royal Veil 	395	18B
+Triumphant Cry 	396	18C
+Monarch March 	397	18D
+Order Mastery 	398	18E
+Morale Boost 	399	18F
+Attack Order 	400	190
+Guard Order 	401	191
+Prevent Order 	402	192
+Protect Order 	403	193
+Dauntless Order 	404	194
+Holy Crown 	405	195
+Fire Circle 	406	196
+Freeze Circle 	407	197
+Shock Circle 	408	198
+Link Order 	409	199
+Link Order II 	410	19A
+Ad Nihilo 	411	19B
+Negotiation 	412	19C
+White Noble 	413	19D
+Clearance 	414	19E
+Cheer 	415	19F
+Take 	416	1A0
+Victory Vow 	417	1A1
+Proof of Nobility 	418	1A2
+DUMMY 	419	1A3
+DUMMY 	420	1A4
+DUMMY 	421	1A5
+HP Up 	422	1A6
+TP Up 	423	1A7
+Phys ATK Up 	424	1A8
+Elem ATK Up 	425	1A9
+Blade Mastery 	426	1AA
+Force Mastery 	427	1AB
+Limit Break 	428	1AC
+Force Energy 	429	1AD
+Weapon Free 	430	1AE
+Vital Shut 	431	1AF
+Mind Shut 	432	1B0
+Absorb 	433	1B1
+Force Charge 	434	1B2
+Sonic Raid 	435	1B3
+Flame Sabre 	436	1B4
+Freeze Sabre 	437	1B5
+Shock Sabre 	438	1B6
+Gale Rush 	439	1B7
+Overkiller 	440	1B8
+Delayed Chase 	441	1B9
+Full Slash 	442	1BA
+Resonance 	443	1BB
+Force Reset 	444	1BC
+Force Shield 	445	1BD
+Fire Wave 	446	1BE
+Ice Wave 	447	1BF
+Thunder Wave 	448	1C0
+Blade Recoil 	449	1C1
+Meteor Smash 	450	1C2
+Power Cell 	451	1C3
+Extend 	452	1C4
+Self-Regenerate 	453	1C5
+Accelerate 	454	1C6
+Mine 	455	1C7
+Transform 	456	1C8
+Ignition Ray 	457	1C9
+Akashic Nova 	458	1CA
+DUMMY 	459	1CB
+DUMMY 	460	1CC
+DUMMY 	461	1CD
+Wolf Pack 	462	1CE
+Forest Guardian 	463	1CF
+Queen's Mark 	464	1D0
+Abyssal Prayer 	465	1D1
+Phoenix Wings 	466	1D2
+Yggdra Vaccine 	467	1D3
+Offering Robe 	468	1D4
+None 	469	1D5
+None 	470	1D6
+None 	471	1D7
+None 	472	1D8
+None 	473	1D9
+None 	474	1DA
+None 	475	1DB
+Medica 	476	1DC
+Amrita 	477	1DD
+Hamao 	478	1DE
+Nectar 	479	1DF
+Nectar 	480	1E0
+Soma Type 	481	1E1
+Soma Type 	482	1E2
+Theriaca A 	483	1E3
+Theriaca A 	484	1E4
+Theriaca B 	485	1E5
+Theriaca B 	486	1E6
+Last Chase 	487	1E7
+Laudanum 	488	1E8
+Unihorn 	489	1E9
+Bravant 	490	1EA
+Stonard 	491	1EB
+Fire Mist 	492	1EC
+Ice Mist 	493	1ED
+Volt Mist 	494	1EE
+Cut Mist 	495	1EF
+Bash Mist 	496	1F0
+Stab Mist 	497	1F1
+All Mist 	498	1F2
+Blaze Oil 	499	1F3
+Freeze Oil 	500	1F4
+Shock Oil 	501	1F5
+Boost Up 	502	1F6
+Flash Bomb 	503	1F7
+Sonic Bomb 	504	1F8
+EXP Up 	505	1F9
+Encyclopedia 	506	1FA
+Lucky Scarab 	507	1FB
+Hunting Horn 	508	1FC
+Four-Leaf Clover 	509	1FD
+Fire Talisman 	510	1FE
+Ice Talisman 	511	1FF
+Volt Talisman 	512	200
+Flame Talisman 	513	201
+Freeze Talisman 	514	202
+Shock Talisman 	515	203
+Blind Incense 	516	204
+Poison Incense 	517	205
+Nerve Gas 	518	206
+Confuse Gas 	519	207
+Curse Gas 	520	208
+Sleep Gas 	521	209
+Tangler: Head 	522	20A
+Tangler: Arms 	523	20B
+Tangler: Legs 	524	20C
+Incarnation Charm 	525	20D
+Yggdra Virus 	526	20E
+Food: West 21 	527	20F
+Good Effect 5 	528	210
+Bad Effect 1 	529	211
+Bad Effect 4 	530	212
+Bad Effect 6 	531	213
+Regenurtica 	532	214
+Gingerlife 	533	215
+Echinaceup 	534	216
+Amalawake 	535	217
+Elderflower 	536	218
+Bison Lamian 	537	219
+Fried Rice 	538	21A
+Fried Whole Spider 	539	21B
+Overcooked Meat 	540	21C
+Owl Cartilage Karaage	541	21D
+Forest Deer Sukiyaki 	542	21E
+Snow Egg Oden 	543	21F
+Boar Tonjiru 	544	220
+Sweet & Sour Moa 	545	221
+Seared Deer 	546	222
+Revenge Plan 	547	223
+Bracing Plan 	548	224
+Manhan Quanxi 	549	225
+Firestorm 	550	226
+Stone Gleam 	551	227
+Siren Song 	552	228
+Flood 	553	229
+Thunderwing 	554	22A
+Revenge Plan 	555	22B
+Reckless Swing 	556	22C
+Fire Chaser 	557	22D
+Ice Chaser 	558	22E
+Volt Chaser 	559	22F
+Sagittarius Shot 	560	230
+Attack Bait 	561	231
+Attack Bait 	562	232
+Magic Bait 	563	233
+Magic Bait 	564	234
+Blood Rouge 	565	235
+DUMMY 	566	236
+Delay Heal 	567	237
+Additional Palm 	568	238
+Healing Lullaby 	569	239
+Peace Ballad 	570	23A
+Echoing Rondo 	571	23B
+Harmonized Chase 	572	23C
+Overhead Stance 	573	23D
+Clear Stance 	574	23E
+Drawing Stance 	575	23F
+Peerless Trio 	576	240
+DUMMY 	577	241
+Bloodlust 	578	242
+Dummy 	579	243
+Delayed Charge 	580	244
+Cross Charge 	581	245
+Battle Instinct 	582	246
+Life Trade 	583	247
+Reincarnate 	584	248
+Sacrifice 	585	249
+War Heal 	586	24A
+War Heal Line 	587	24B
+War Heal All 	588	24C
+War Response 	589	24D
+Artery 	590	24E
+War Revive 	591	24F
+Legcut 	592	250
+Armcut 	593	251
+Headcut 	594	252
+Strength Slash 	595	253
+Guard Slash 	596	254
+DUMMY 	597	255
+Endurance 	598	256
+Comet Drop 	599	257
+Royal Veil 	600	258
+Protect Order 	601	259
+Link Order 	602	25A
+Link Order II 	603	25B
+Displace 	604	25C
+Chase Heal 	605	25D
+High Regen 	606	25E
+Medical Rod 	607	25F
+Overheal 	608	260
+Healing Rhythm 	609	261
+Life Ensemble 	610	262
+Final Gift 	611	263
+Overkiller 	612	264
+Delayed Chase 	613	265
+Blade Recoil 	614	266
+Self-Regenerate 	615	267
+Illusion Step 	616	268
+Dummy 	617	269
+Dummy 	618	26A
+Dummy 	619	26B
+Auto-Heal 	620	26C
+Force Energy 	621	26D
+Ultimate Endurance 	622	26E
+DUMMY 	623	26F
+DUMMY 	624	270
+DUMMY 	625	271
+DUMMY 	626	272
+DUMMY 	627	273
+DUMMY 	628	274
+DUMMY 	629	275
+DUMMY 	630	276
+DUMMY 	631	277
+DUMMY 	632	278
+DUMMY 	633	279
+DUMMY 	634	27A
+DUMMY 	635	27B
+Cut Up 	636	27C
+Stab Up 	637	27D
+Bash Up 	638	27E
+Fire Up 	639	27F
+Ice Up 	640	280
+Volt Up 	641	281
+Ailment Up 	642	282
+Bind Up 	643	283
+Grimoire Chance Up 	644	284
+Rare Enemy Up 	645	285
+Ail Rec Up 	646	286
+Bind Rec Up 	647	287
+Drop Amount Up 	648	288
+Victory HP 	649	289
+Victory TP 	650	28A
+Auto-Heal 	651	28B
+Self-Heal Amp 	652	28C
+Force Up 	653	28D
+Skill Level Up 	654	28E
+Turn TP 	655	28F
+TP Cost Recovery 	656	290
+Cut Talisman 	657	291
+Bash Talisman 	658	292
+Stab Talisman 	659	293
+Fear Incense 	660	294
+Stone Incense 	661	295
+Oversoma 	662	296
+Convalescent Drink 	663	297
+DUMMY 	664	298
+DUMMY 	665	299
+DUMMY 	666	29A
+NONE 	667	29B
+NONE 	668	29C
+Hard Shell 	669	29D
+Desperate Needle 	670	29E
+Ensnaring Web 	671	29F
+Poison Powder 	672	2A0
+Scorching Laser 	673	2A1
+Solar Flame 	674	2A2
+Rolling 	675	2A3
+Beaked Rush 	676	2A4
+Dive Kick 	677	2A5
+Sleep Powder 	678	2A6
+Snail March 	679	2A7
+Charge 	680	2A8
+Freezing Snare 	681	2A9
+Baffling Step 	682	2AA
+Knockdown 	683	2AB
+Paralyze Fang 	684	2AC
+Rending Bite 	685	2AD
+Menacing Glare 	686	2AE
+Cruel Fangs 	687	2AF
+Heaven's Bolt 	688	2B0
+Tail Whip 	689	2B1
+Toxic Secretion 	690	2B2
+Drain Dive 	691	2B3
+Stunning Spores 	692	2B4
+Strike Up 	693	2B5
+Sweep Strike 	694	2B6
+Heavy Stomp 	695	2B7
+Binding Vines 	696	2B8
+Gouging Thorn 	697	2B9
+Bullrush 	698	2BA
+Flame Breath 	699	2BB
+Insulation Gel 	700	2BC
+Strike Down 	701	2BD
+Confusing Dust 	702	2BE
+Slashing Claws 	703	2BF
+Corrosive Aura 	704	2C0
+Blast Horn 	705	2C1
+Powerful Rage 	706	2C2
+Poison Pollen 	707	2C3
+Self-Destruct 	708	2C4
+Hammerhead 	709	2C5
+Revenge Needle 	710	2C6
+Double Needle 	711	2C7
+Fire God's Fury 	712	2C8
+Fearsome Roar 	713	2C9
+Spin Drive 	714	2CA
+Harsh Cry 	715	2CB
+Dust Tail 	716	2CC
+Clash 	717	2CD
+Curse Fang 	718	2CE
+Death Stare 	719	2CF
+Lava Boulder 	720	2D0
+Waterproof Fire 	721	2D1
+Snowball 	722	2D2
+Confusing Blitz 	723	2D3
+Chase Down 	724	2D4
+Stomp 	725	2D5
+Freezing Breath 	726	2D6
+Harsh Buzz 	727	2D7
+Trample 	728	2D8
+Shielding Shell 	729	2D9
+Destructive Fang 	730	2DA
+Ice Fin 	731	2DB
+White Wings 	732	2DC
+Stone Gaze 	733	2DD
+Shock Assault 	734	2DE
+Hailstorm 	735	2DF
+Assault Howl 	736	2E0
+Frost Fang 	737	2E1
+Venom Fang 	738	2E2
+Eye of Madness 	739	2E3
+Onrush 	740	2E4
+Elemental Gel 	741	2E5
+Ice King's Howl 	742	2E6
+Sealing Bolt 	743	2E7
+Poison Sting 	744	2E8
+Wind Guard 	745	2E9
+Crushing Jaw 	746	2EA
+Black Wings 	747	2EB
+Binding String 	748	2EC
+Confusing Dust 	749	2ED
+Slice and Dice 	750	2EE
+Air Slash 	751	2EF
+Terror Sting 	752	2F0
+Discharge 	753	2F1
+Cannibalize 	754	2F2
+Night Call 	755	2F3
+Crazed Fang 	756	2F4
+Brutal Ray 	757	2F5
+Do or Die 	758	2F6
+Horn Smash 	759	2F7
+Jump 	760	2F8
+Hex 	761	2F9
+Gale Wings 	762	2FA
+Tearing Claws 	763	2FB
+Reaping Claws 	764	2FC
+Thunderous Fury 	765	2FD
+Crazed Glare 	766	2FE
+Ripping Claws 	767	2FF
+Last Cry 	768	300
+Headbutt 	769	301
+Cripple 	770	302
+Frail Aura 	771	303
+Power Gel 	772	304
+Revenge Claw 	773	305
+Silver Bullet 	774	306
+Nightmare 	775	307
+Night Run 	776	308
+King of Kings 	777	309
+Revenge Blade 	778	30A
+Glinting Blade 	779	30B
+Death's Edge 	780	30C
+Dark Blade 	781	30D
+EMP 	782	30E
+Stance 	783	30F
+Slaughter Blade 	784	310
+Greedy Bite 	785	311
+Electric Impact 	786	312
+Ancient Guard 	787	313
+Affection Collar 	788	314
+Curse Dance 	789	315
+Rejection Needle 	790	316
+Vile Fangs 	791	317
+Scorching Light 	792	318
+Madness Dust 	793	319
+Evil Cry 	794	31A
+Triple Death 	795	31B
+Bloody Blade 	796	31C
+Sleep Pollen 	797	31D
+Dancing Petals 	798	31E
+Terror Pain 	799	31F
+Absorb Vine 	800	320
+Warhammer 	801	321
+Reversal Beat 	802	322
+Not Used 	803	323
+Playful Bite 	804	324
+Frolic 	805	325
+Pout 	806	326
+Blood Drain 	807	327
+Echolocation 	808	328
+Toxic Breath 	809	329
+Explosives 	810	32A
+Petrifying Stare 	811	32B
+Jolting Blow 	812	32C
+Horror Banquet 	813	32D
+Holy Shock 	814	32E
+Command Boars 	815	32F
+Swing 	816	330
+Appraise 	817	331
+Infectious Club 	818	332
+Destructive Claw 	819	333
+Holy Fire 	820	334
+Head Splitter 	821	335
+Snaring String 	822	336
+Poison Fang 	823	337
+Confuse Vine 	824	338
+Scythe Slash 	825	339
+Execution Scythe 	826	33A
+None 	827	33B
+None 	828	33C
+None 	829	33D
+None 	830	33E
+None 	831	33F
+None 	832	340
+None 	833	341
+None 	834	342
+None 	835	343
+None 	836	344
+None 	837	345
+None 	838	346
+None 	839	347
+None 	840	348
+None 	841	349
+None 	842	34A
+None 	843	34B
+None 	844	34C
+None 	845	34D
+None 	846	34E
+None 	847	34F
+None 	848	350
+None 	849	351
+None 	850	352
+None 	851	353
+None 	852	354
+None 	853	355
+None 	854	356
+None 	855	357
+None 	856	358
+None 	857	359
+None 	858	35A
+None 	859	35B
+None 	860	35C
+None 	861	35D
+None 	862	35E
+None 	863	35F
+None 	864	360
+None 	865	361
+None 	866	362
+Snake Pile 	867	363
+Great Blaze 	868	364
+Double Strike 	869	365
+Menacing Roar 	870	366
+Madness Roar 	871	367
+Dispersed Cruelty 	872	368
+Inferno Strike 	873	369
+Stun 	874	36A
+Terror's Embrace 	875	36B
+Kingly Fire 	876	36C
+Explosion 	877	36D
+Blind Laughter 	878	36E
+Loose Thread 	879	36F
+Pandemonium 	880	370
+Blossom Sketch 	881	371
+Corpse Ash 	882	372
+Spellsword 	883	373
+Nature's Will 	884	374
+Blind Laughter 	885	375
+Loose Thread 	886	376
+Fire Rounds 	887	377
+Ice Rounds 	888	378
+Volt Rounds 	889	379
+Rapid Fire 	890	37A
+Accelerate 	891	37B
+Mystic Shot 	892	37C
+Fire Rounds 	893	37D
+Ice Rounds 	894	37E
+Volt Rounds 	895	37F
+Cry Soul 	896	380
+Lullaby 	897	381
+Piercing Shell 	898	382
+Ice Shave 	899	383
+Six Sins 	900	384
+Call Ally 	901	385
+Tentacle Creep 	902	386
+Shrill Cry 	903	387
+Chaos Scream 	904	388
+Claws of Despair 	905	389
+Storm Feather 	906	38A
+Feast 	907	38B
+Putrid Breath 	908	38C
+Violent Cry 	909	38D
+Berserk Cry 	910	38E
+Reckless Barrier 	911	38F
+Tusk Strike 	912	390
+Brandish 	913	391
+Eradicate 	914	392
+King's Rush 	915	393
+VOID0 	916	394
+VOID1 	917	395
+VOID2 	918	396
+VOID3 	919	397
+LRDA 	920	398
+AACV 	921	399
+Standby 	922	39A
+MACV 	923	39B
+REPAIR 	924	39C
+Dazzling Sunlight 	925	39D
+Hail and Rain 	926	39E
+Crashing Thunder 	927	39F
+Birth of Anguish 	928	3A0
+Mountain Stream 	929	3A1
+Solitude 	930	3A2
+Message Standby 	931	3A3
+Seek 	932	3A4
+Dance 	933	3A5
+Call Ally 	934	3A6
+Call Ally 	935	3A7
+Hellish Wail 	936	3A8
+Colossal Meteor 	937	3A9
+Grinding Mace 	938	3AA
+Binding Spike 	939	3AB
+Hundred Strikes 	940	3AC
+Avarice Claw 	941	3AD
+Crushing Tail 	942	3AE
+Hellfire Breath 	943	3AF
+Heal Cry 	944	3B0
+Call Ally 	945	3B1
+Null thy Strength 	946	3B2
+Pity the Weak 	947	3B3
+Behold my Power 	948	3B4
+Dance with Lunacy 	949	3B5
+Strongman's Glory 	950	3B6
+Recluse's Glory 	951	3B7
+Value of Solitude 	952	3B8
+My Wrath 	953	3B9
+My Sorrow 	954	3BA
+My Mercy 	955	3BB
+Release my Power 	956	3BC
+Liberating Light 	957	3BD
+Eternal Exodus 	958	3BE
+Howling Winds 	959	3BF
+Noble Rest 	960	3C0
+Unhand Me 	961	3C1
+My Realm 	962	3C2
+Twilight's Gleam 	963	3C3
+Sunlight's Dawn 	964	3C4
+Call Ally 	965	3C5
+Stone Gleam 	966	3C6
+Doom Breath 	967	3C7
+Dark Moon 	968	3C8
+Impairing Claws 	969	3C9
+Pound 	970	3CA
+Call Ally 	971	3CB
+Poison Swamp 	972	3CC
+Silk Spread 	973	3CD
+Silk Spit 	974	3CE
+Venomous Bite 	975	3CF
+Stinger 	976	3D0
+Avalanche 	977	3D1
+Soul Freeze 	978	3D2
+Pile Bunker 	979	3D3
+Buster Arm 	980	3D4
+Crystal Scar 	981	3D5
+Call Ally 	982	3D6
+Electric Arrow 	983	3D7
+Plasma Shot 	984	3D8
+Volt Shot 	985	3D9
+Lightspeed 	986	3DA
+Lightspeed 	987	3DB
+Spindrift 	988	3DC
+Electric Arrow 	989	3DD
+Rising Flame 	990	3DE
+Overpower 	991	3DF
+Condemn Blade 	992	3E0
+Nihil Blade 	993	3E1
+Soundless Blade 	994	3E2
+Flame Formation 	995	3E3
+Release Flame 	996	3E4
+Flash 	997	3E5
+Power of Stone 	998	3E6
+Blind Laughter 	999	3E7
+Blind Laughter 	1000	3E8
+None 	1001	3E9
+Pandemonium 	1002	3EA
+Blossom Sketch 	1003	3EB
+None 	1004	3EC
+None 	1005	3ED
+Seek 	1006	3EE
+Crystal Scar 	1007	3EF
+None 	1008	3F0
+Power of Stone 	1009	3F1
+Power of Stone 	1010	3F2
+Power of Stone 	1011	3F3
+Release my Power 	1012	3F4
+Release my Power 	1013	3F5
+Unhand Me 	1014	3F6
+None 	1015	3F7
+None 	1016	3F8
+None 	1017	3F9
+None 	1018	3FA
+None 	1019	3FB
+None 	1020	3FC
+None 	1021	3FD
+None 	1022	3FE
+None 	1023	3FF
+None 	1024	400
+None 	1025	401
+None 	1026	402
+None 	1027	403
+None 	1028	404
+None 	1029	405
+None 	1030	406
+None 	1031	407
+None 	1032	408
+None 	1033	409
+None 	1034	40A
+None 	1035	40B
+None 	1036	40C
+None 	1037	40D
+None 	1038	40E
+None 	1039	40F
+None 	1040	410
+None 	1041	411
+None 	1042	412
+None 	1043	413
+None 	1044	414
+None 	1045	415
+None 	1046	416
+Stomach Acid 	1047	417
+Bracing Liquid 	1048	418
+Freezing Fluid 	1049	419
+Survival Instinct 	1050	41A
+Paralyzing Fluid 	1051	41B
+Chase Laser 	1052	41C
+Hell Thread 	1053	41D
+Special Standby 	1054	41E
+Poison Sap 	1055	41F
+Infernal Rounds 	1056	420
+Survive 	1057	421
+Chase Laser 	1058	422
+Thousand Eyes 	1059	423
+Forbidden Light 	1060	424
+Cell Membrane 	1061	425
+Frost Bomb 	1062	426
+Cell Membrane 	1063	427
+None 	1064	428
+None 	1065	429
+None 	1066	42A
+None 	1067	42B
+Stomach Acid 	1068	42C
+Bracing Liquid 	1069	42D
+Freezing Fluid 	1070	42E
+Paralyzing Fluid 	1071	42F
+Poison Sap 	1072	430
+Hell Thread 	1073	431
+Revenge Needle 	1074	432
+Rejection Needle 	1075	433
+Do or Die 	1076	434
+Cannibalize 	1077	435
+Cannibalize 	1078	436
+Glinting Blade 	1079	437
+Slaughter Blade 	1080	438
+Warhammer 	1081	439
+Reversal Beat 	1082	43A
+Survival Instinct 	1083	43B
+Ice Breath 	1084	43C
+Mirror Shield 	1085	43D
+Crushing Arm 	1086	43E
+Cold Regen 	1087	43F
+Wail 	1088	440
+Triple Strike 	1089	441
+Call Ally 	1090	442
+Resonant Ice 	1091	443
+Volt Torrent 	1092	444
+Ancient Curse 	1093	445
+Judgement 	1094	446
+Corrupting Howl 	1095	447
+Binding Dance 	1096	448
+Call Ally 	1097	449
+Resonant Thunder 	1098	44A
+Fire Torrent 	1099	44B
+Resonant Roar 	1100	44C
+Dragon Strike 	1101	44D
+Draconic Fury 	1102	44E
+Dragon Claw 	1103	44F
+Wyrm Quake 	1104	450
+Call Ally 	1105	451
+Resonant Fire 	1106	452
+Wing Talon 	1107	453
+Tail Strike 	1108	454
+Whirlwind 	1109	455
+Burning Ray 	1110	456
+Sharp Roar 	1111	457
+Flame Formation 	1112	458
+Mirror Shield 	1113	459
+Calamity Fangs 	1114	45A
+AACV 	1115	45B
+MACV 	1116	45C
+My Realm 	1117	45D
+Poison Swamp 	1118	45E
+Release Flame 	1119	45F
+Regen 	1120	460
+Force Wall 	1121	461
+Power Wall 	1122	462
+Rock Hammer 	1123	463
+Triple Hammer 	1124	464
+Infernal Rounds 	1125	465
+Blessed Light 	1126	466
+Plague Club 	1127	467
+Crush 	1128	468
+Reflect Guard 	1129	469
+Berserk Vines 	1130	46A
+Ensnaring Vines 	1131	46B
+White Plasma 	1132	46C
+Steel Stinger 	1133	46D
+Freeze 	1134	46E
+Red Plasma 	1135	46F
+Healing Dance 	1136	470
+Crazed Dance 	1137	471
+Command Boars 	1138	472
+Forbidden Light 	1139	473
+Thousand Eyes 	1140	474
+Reflect Guard 	1141	475
+Calamity Eyes 	1142	476
+Core Charge 	1143	477
+None 	1144	478
+Pitfall Snare 	1145	479
+Pitfall Escape 	1146	47A
+Root Cyclone 	1147	47B
+Earth Slash 	1148	47C
+Demon's Lance 	1149	47D
+Poison Dust 	1150	47E
+Calamity Eyes 	1151	47F
+Ruinous Curse 	1152	480
+Pandemic 	1153	481
+Isolate 	1154	482
+Armageddon 	1155	483
+End Times 	1156	484
+Core Charge 	1157	485
+Segment 	1158	486
+Giga Flame 	1159	487
+Freezing Nova 	1160	488
+Thunder Rain 	1161	489
+Awaken 	1162	48A
+Fang Flurry 	1163	48B
+Glacial Fin 	1164	48C
+Torment Barb 	1165	48D
+Execution Barb 	1166	48E
+Earth Slash 	1167	48F
+Demon's Lance 	1168	490
+Giga Flame 	1169	491
+Freezing Nova 	1170	492
+Thunder Rain 	1171	493
+Paralyze All (D) 	1172	494
+Fear All (D) 	1173	495
+Sleep All (D) 	1174	496
+Confuse All (D) 	1175	497
+Stun All (D) 	1176	498
+Head Bind All (D) 	1177	499
+Arm Bind All (D) 	1178	49A
+Leg Bind All (D) 	1179	49B
+Kill All (D) 	1180	49C
+Petrify All (D) 	1181	49D
+None 	1182	49E
+None 	1183	49F
+None 	1184	4A0
+None 	1185	4A1
+None 	1186	4A2
+Power Needle 	1187	4A3
+Tentacle Rage 	1188	4A4
+Shock Swing 	1189	4A5
+Venom Claw 	1190	4A6
+Chaos Slash 	1191	4A7
+Toxic Gas 	1192	4A8
+Power Needle 	1193	4A9
+Toxic Gas 	1194	4AA
+Horrific Roar 	1195	4AB
+Cold Fangs 	1196	4AC
+Silver Fang 	1197	4AD
+Binding Howl 	1198	4AE
+Silent Stare 	1199	4AF
+Cross Counter 	1200	4B0
+Cross Counter 	1201	4B1
+Horn Rush 	1202	4B2
+Combo Smash 	1203	4B3
+Hurricane Punch 	1204	4B4
+Cure 	1205	4B5
+Holy Veil 	1206	4B6
+Crunch 	1207	4B7
+Queen's Verdict 	1208	4B8
+Duster 	1209	4B9
+Ruler's Eye 	1210	4BA
+Attack Unit 	1211	4BB
+Defense Unit 	1212	4BC
+Ice Breath 	1213	4BD
+Flood 	1214	4BE
+Tackle 	1215	4BF
+Coiling Tail 	1216	4C0
+Freeze Aura 	1217	4C1
+Aqua Veil 	1218	4C2
+Thunderwing 	1219	4C3
+Pinion Spear 	1220	4C4
+Deathbringer 	1221	4C5
+Chaosbringer 	1222	4C6
+Grip 	1223	4C7
+Wind Breath 	1224	4C8
+Flame Sigh 	1225	4C9
+Frost Smile 	1226	4CA
+Lightning 	1227	4CB
+Tendril Thrash 	1228	4CC
+Vampiric Kiss 	1229	4CD
+Ancient Pollen 	1230	4CE
+Demon's Croon 	1231	4CF
+Dark Claw 	1232	4D0
+Poison Tail 	1233	4D1
+Petra Voice 	1234	4D2
+Glutton 	1235	4D3
+Snaring Tentacle 	1236	4D4
+Greed 	1237	4D5
+Dread Stare 	1238	4D6
+Chi Burst 	1239	4D7
+Crimson Cyclone 	1240	4D8
+Phoenix Strike 	1241	4D9
+Suzaku Stance 	1242	4DA
+Heavy Jump 	1243	4DB
+Hydro Jump 	1244	4DC
+Lick Around 	1245	4DD
+Hug 	1246	4DE
+Get Excited 	1247	4DF
+Calm Down 	1248	4E0
+Fixed Stare 	1249	4E1
+Despise Solitude 	1250	4E2
+Darkness Shroud 	1251	4E3
+Realm of Death 	1252	4E4
+Shed thy Tears 	1253	4E5
+Know thy Reason 	1254	4E6
+Selfless Strength 	1255	4E7
+Call Ally 	1256	4E8
+Death's Glimmer 	1257	4E9
+Wave of Ruin 	1258	4EA
+Get Excited 	1259	4EB
+Calm Down 	1260	4EC
+Darkness Shroud 	1261	4ED
+Realm of Death 	1262	4EE
+Wave of Ruin 	1263	4EF
+Spider Lily 	1264	4F0
+Light Speed 	1265	4F1
+None 	1266	4F2
+None 	1267	4F3

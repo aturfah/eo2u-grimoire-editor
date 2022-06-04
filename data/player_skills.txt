@@ -1,0 +1,321 @@
+
+HP Up
+TP Up
+Phys ATK Up
+Elem ATK Up
+Phys DEF Up
+Elem DEF Up
+Curb ATK Up
+Curb DEF Up
+Speed Up
+Take
+Chop
+Mine
+Natural Instinct
+Sword Mastery
+Raging Edge
+Tornado
+Blinding Slash
+Falcon Slash
+Hurricane
+Axe Mastery
+Boomerang Axe
+Head Bash
+Stunning Smash
+Charge Smash
+Heavy Smash
+War Cry
+Triple Charge
+Fire Chaser
+Ice Chaser
+Volt Chaser
+Fencer
+Double Attack
+Swordbreaker
+Bow Mastery
+Flank Shot
+Blind Arrow
+Sleep Arrow
+Paralysis Arrow
+Drop Shot
+Sagittarius Shot
+Multi-Shot
+Disabling Shot
+Trick Step
+Chain Dance
+Hazy Arrow
+Scapegoat
+Swap Step
+Risk Perception
+Owl-Eye
+Sneak Attack
+Stalker
+Resuscitate
+Efficiency
+Shield Mastery
+Front Guard
+Rear Guard
+Keep Guard
+Fire Wall
+Ice Wall
+Volt Wall
+Heal Guard
+Shield Smite
+Shield Rush
+Sentinel Guard
+Provoke
+Pre-Provoke
+Fortify
+Parry
+Line Cure
+Line Heal
+Aegis
+Armor of Light
+Whip Mastery
+Gag
+Cuffs
+Shackles
+Ecstasy
+Viper
+Crimson Rouge
+Sword Mastery
+Hypno Bite
+Nerve Bite
+Mirage Bite
+Soul Liberator
+Drain Bite
+Scorpion
+Temptation
+Bind Heart
+Attack Bait
+Elemental Bait
+Snake Eyes
+Perseverance
+Heal Mastery
+Cure
+Salve
+Unbind
+Refresh
+Revive
+High Regen
+Healing
+Line Heal
+Salve 2
+Chase Heal
+Delayed Heal
+Overheal
+Staff Mastery
+Heavy Strike
+Medical Rod
+Vital Hit
+Final Gift
+Scavenge
+Safe Passage
+Formula Mastery
+Fire Formula
+Ice Formula
+Volt Formula
+Flame Formula
+Freeze Formula
+Spark Formula
+Riot Formula
+Inferno Formula
+Cocytus Formula
+Thor Formula
+Compression
+Nuclear Formula
+Palm Mastery
+Fire Palm
+Ice Palm
+Volt Palm
+Splash Palm
+Additional Palm
+Sight Formula
+Song Mastery
+Warrior Song
+Shelter Song
+Energy Ensemble
+Lightfoot Melody
+Insight Melody
+Skanda Ensemble
+Fire Prelude
+Ice Prelude
+Volt Prelude
+Flame Fantasia
+Frost Fantasia
+Shock Fantasia
+Barbaric March
+Life Ensemble
+Reverb
+Health Requiem
+Alluring Ballad
+Jovial March
+Healing Rhythm
+Holy Gift
+Katana Mastery
+Upper Stance
+Clear Stance
+Drawing Stance
+Upward Slash
+Charging Thrust
+Sheath Strike
+Horse Slash
+Flame Grater
+Swallow Strike
+Arm Strike
+Lightning Stab
+Moon Shadow
+Beheading Cut
+Frigid Slash
+Ground Strike
+Peerless Stance
+Peerless Combo
+Post-Initiative
+Perfect Chaser
+Pre-Initiative
+Curse Mastery
+Sapping Curse
+Frailty Curse
+Weakening Curse
+Blinding Curse
+Madness Curse
+Venom Curse
+Torpor Curse
+Corrupt Curse
+Cranial Curse
+Abdomen Curse
+Immobile Curse
+Evil Eye
+Shielding Word
+Conflict Word
+Suicide Word
+Sacrifice
+Reincarnate
+Life Trade
+Chained Benefit
+Gun Mastery
+Medic Bullet
+Fire Rounds
+Ice Rounds
+Volt Rounds
+Charged Fire
+Charged Ice
+Charged Volt
+Burst Shot
+Head Snipe
+Arm Snipe
+Leg Snipe
+Charged Shot
+Ricochet
+Cover Fire
+Shell Shock
+Preemptive Shell
+Penetrator
+Point Blank
+Act Quick
+Double Action
+War Lore Mastery
+War Heal
+War Heal Line
+War Heal All
+Warmight
+Rockskin
+Artery
+War Response
+Random Disease
+Displace
+Barrier
+War Revive
+War Edge Mastery
+Strength Slash
+Guard Slash
+Headcut
+Armcut
+Legcut
+Ailing Slash
+Vampire
+Loyalty Mastery
+Lick Wounds
+Auto-Lick
+Protect
+Hit-Taker
+Protection Vow
+Self-Defense
+Beast Roar
+Preemptive Roar
+Claw Mastery
+Tiger Blow
+Wolf Fang
+Comet Drop
+Wildblow
+Beast Dance
+Savage Rush
+Berserk
+Endurance
+Deadly Resolve
+Bull Charge
+Order Mastery
+Attack Order
+Guard Order
+Dauntless Order
+Holy Crown
+Protect Order
+Ad Nihilo
+Negotiation
+White Noble
+Clearance
+Prevent Order
+Morale Boost
+Link Order
+Link Order II
+Fire Circle
+Freeze Circle
+Shock Circle
+Cheer
+Royal Veil
+Triumphant Cry
+Monarch March
+Spear Mastery
+Long Thrust
+Draining Thrust
+Legion Thrust
+Draining Burst
+Legion Burst
+Head Pierce
+Spear Assist
+Delayed Charge
+Cross Charge
+Turning Tide
+Bloody Offense
+Bloodlust
+Stigmata
+Battle Instinct
+Blood Fortune
+Allied Bonds
+Spirit Shield
+Limitless
+Black Sabbath
+Blade Mastery
+Sonic Raid
+Gale Rush
+Flame Sabre
+Freeze Sabre
+Shock Sabre
+Delayed Chase
+Overkiller
+Full Slash
+Resonance
+Vital Shut
+Mind Shut
+Absorb
+Limit Break
+Weapon Free
+Fire Wave
+Ice Wave
+Thunder Wave
+Blade Recoil
+Meteor Smash
+Power Cell
+Extend
+Self-Regenerate
+Accelerate
