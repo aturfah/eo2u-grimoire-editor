@@ -162,7 +162,6 @@ Volt Shot
 Lightspeed 
 Lightspeed 
 Spindrift 
-None 
 Glinting Blade 
 Slaughter Blade 
 Warhammer 
