@@ -1,4 +1,5 @@
 from pathlib import Path
+from pprint import pprint
 
 def load_skillname_hex_maps():
     data_dir = Path("data/")
@@ -8,9 +9,19 @@ def load_skillname_hex_maps():
     enemy_grimoire_skills = data_dir.joinpath("enemy_grimoire_skills.txt").read_text().splitlines()
 
     ## Prepare the dictionaries
+    name_to_hex = {}
+    hex_to_name = {}
     for line in skill_to_hex_data:
-        print(line)
+        name, _, hex_id = line.split("\t")
+        name = name.strip()
+        hex_id = hex_id.strip()
+        if name in player_skills or name in enemy_grimoire_skills:
+            name_to_hex[name] = hex_id
+            hex_to_name[hex_id] = name
 
-    print(player_skills)
-    print(enemy_grimoire_skills)
+    return name_to_hex, hex_to_name
 
+if __name__ == "__main__":
+    n_to_h, h_to_n = load_skillname_hex_maps()
+    pprint(n_to_h)
+    pprint(h_to_n)
