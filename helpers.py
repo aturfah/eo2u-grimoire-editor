@@ -57,8 +57,8 @@ def parse_grimoire_origin(grimoire_data):
     """Bytes 1-2 define origin"""
     origin_bytes = grimoire_data[0:2]
     origin = GRIMOIRE_ORIGIN_MAP[origin_bytes[0]]
-    print("Origin Bytes:", origin_bytes)
-    print("\tOrigin: {}".format(origin))
+    # print("Origin Bytes:", origin_bytes)
+    # print("\tOrigin: {}".format(origin))
 
     return origin, origin_bytes
 
@@ -84,8 +84,8 @@ def parse_grimoire_class(grimoire_data):
     """Bytes 3-4 determine originating class"""
     class_bytes = grimoire_data[2:4]
     grimoire_class = GRIMOIRE_CLASS_MAP[class_bytes[0]]
-    print("Class Bytes:", class_bytes)
-    print("\tClass: {}".format(grimoire_class))
+    # print("Class Bytes:", class_bytes)
+    # print("\tClass: {}".format(grimoire_class))
 
     return grimoire_class, class_bytes
 
@@ -94,7 +94,7 @@ def parse_grimoire_origin_details(grimoire_data):
     """Bytes 5-6 determine things like 'Overhead Ronin'"""
     ## TODO: Fill me in
     orig_details_bytes = grimoire_data[4:6]
-    print("Origin Details Bytes:", orig_details_bytes)
+    # print("Origin Details Bytes:", orig_details_bytes)
 
     return "", orig_details_bytes
 
@@ -102,7 +102,7 @@ def parse_grimoire_origin_details(grimoire_data):
 def parse_grimoire_mystery_bytes(grimoire_data):
     """Bytes 7-8 are Mystery Byte"""
     mystery_bytes = grimoire_data[6:8]
-    print("Mystery Bytes:", mystery_bytes)
+    # print("Mystery Bytes:", mystery_bytes)
 
     return "".join(mystery_bytes)
 
@@ -136,7 +136,6 @@ def ascii_to_hex(str_in, padded_length=72):
 def parse_name_of_trader(grimoire_data):
     """Bytes 9-44 are the Trader Name"""
     name_bytes = grimoire_data[8:44]
-    print("Name Bytes:", "".join(name_bytes))
 
     gg_unicode = []
     cur_char = []
@@ -165,7 +164,8 @@ def parse_name_of_trader(grimoire_data):
     ## Names correspond to full-width characters, need half width
     gg_unicode = unicodedata.normalize("NFKC", gg_unicode)
 
-    print("\tName:", gg_unicode)
+    # print("Name Bytes:", "".join(name_bytes))
+    # print("\tName:", gg_unicode)
 
     return gg_unicode, "".join(name_bytes), unknown_origin
 
@@ -237,9 +237,14 @@ def parse_addon_bonus_level(grimoire_data):
 
 def parse_grimoire(grimoire_data):
     print(grimoire_data)
+
+    empty_grimoire = False
+    if set(grimoire_data) == {"00"}:
+        empty_grimoire = True
+
     origin, origin_bytes = parse_grimoire_origin(grimoire_data)
     grim_class, class_bytes = parse_grimoire_class(grimoire_data)
-    _, origin_details_bytes = parse_grimoire_origin_details(grimoire_data)
+    origin_details, origin_details_bytes = parse_grimoire_origin_details(grimoire_data)
     mystery_bytes = parse_grimoire_mystery_bytes(grimoire_data)
     trader_name, trader_bytes, _ = parse_name_of_trader(grimoire_data)
     bonus_type, bonus_type_bytes = parse_addon_bonus_type(grimoire_data)
@@ -248,7 +253,27 @@ def parse_grimoire(grimoire_data):
     sl_dec, sl_hex = parse_grimoire_skill_level(grimoire_data)
     print("\n\n")
 
-    return 1
+    return {
+        "empty": empty_grimoire,
+        ## Parsed Values
+        "origin": origin,
+        "grim_class": grim_class,
+        "origin_details": origin_details,
+        "trader_name": trader_name,
+        "bonus_type": bonus_type,
+        "bonus_level": bl_dec,
+        "skill_name": skill_name,
+        "skill_level": sl_dec,
+        ## Raw values
+        "origin_bytes": origin_bytes,
+        "grim_class_bytes": class_bytes,
+        "mystery_bytes": mystery_bytes,
+        "trader_name_bytes": trader_bytes,
+        "bonus_type_bytes": bonus_type_bytes,
+        "bonus_level_bytes": bl_hex,
+        "skill_id_bytes": skill_id_bytes,
+        "skill_level_bytes": sl_hex
+    }
 
 def parse_save_file(fname_path:Path):
     if not isinstance(fname_path, Path):
@@ -274,9 +299,10 @@ def parse_save_file(fname_path:Path):
             grimoire_data = [x.upper() for x in grimoire_data]
             # grimoire_data = "40	00	07	00	02	17	07	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	DB	00	0A	00".split("\t")
             g_info = parse_grimoire(grimoire_data)
+            pprint(g_info)
             if g_info:
                 grimoire_info.append(g_info)
-            
+
             counter += 1
             grimoire_data = []
 
