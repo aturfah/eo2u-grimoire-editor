@@ -236,8 +236,6 @@ def parse_addon_bonus_level(grimoire_data):
 
 
 def parse_grimoire(grimoire_data):
-    print(grimoire_data)
-
     empty_grimoire = False
     if set(grimoire_data) == {"00"}:
         empty_grimoire = True
@@ -294,11 +292,11 @@ def parse_save_file(fname_path:Path):
     for idx in range(GRIMOIRE_START, num_bytes):
         grimoire_data.append(file_hex[idx])
         if len(grimoire_data) == GRIMOIRE_LENGTH:
-            print("Grimoire #{}".format(counter+1))
+            # print("Grimoire #{}".format(counter+1))
             grimoire_data = [x.upper() for x in grimoire_data]
             # grimoire_data = "40	00	07	00	02	17	07	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	DB	00	0A	00".split("\t")
             g_info = parse_grimoire(grimoire_data)
-            pprint(g_info)
+
             if g_info:
                 grimoire_info.append(g_info)
 
