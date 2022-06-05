@@ -1,5 +1,6 @@
 from pathlib import Path
 from pprint import pprint
+from typing import Iterable
 import unicodedata
 
 from unicode_to_sjis import UNICODE_TO_SJIS
@@ -23,12 +24,6 @@ def load_skillname_hex_maps():
         hex_id, name = line.split("|")
         name = name.replace("(Passive)", "").strip()
         hex_id = hex_id.strip().replace(" ", "")
-
-        if name == "Comet Drop":
-            print("Hi")
-            print(name in player_skills)
-            print(name in enemy_grimoire_skills)
-            # raise RuntimeError("AAAHHH")
 
         if (name in player_skills) or (name in enemy_grimoire_skills):
             name_to_hex[name] = hex_id
@@ -251,6 +246,7 @@ def parse_grimoire(grimoire_data):
     sl_dec, sl_hex = parse_grimoire_skill_level(grimoire_data)
 
     return {
+        "original_hex": "".join(grimoire_data),
         "empty": empty_grimoire,
         ## Parsed Values
         "origin": origin,
@@ -264,6 +260,7 @@ def parse_grimoire(grimoire_data):
         ## Raw values
         "origin_bytes": origin_bytes,
         "grim_class_bytes": class_bytes,
+        "origin_details_bytes": origin_details_bytes,
         "mystery_bytes": mystery_bytes,
         "trader_name_bytes": trader_bytes,
         "bonus_type_bytes": bonus_type_bytes,
@@ -309,5 +306,47 @@ def parse_save_file(fname_path:Path):
 
     return grimoire_info, "".join(file_hex)
 
+
+def recreate_grimoire_hex(grimoire_datum:dict):
+    """Recreate the grimoire hex string from the dictinary."""
+    output_str = ""
+
+    output_str += "".join(grimoire_datum["origin_bytes"])
+    output_str += "".join(grimoire_datum["grim_class_bytes"])
+    output_str += "".join(grimoire_datum["origin_details_bytes"])
+    output_str += grimoire_datum["mystery_bytes"]
+    output_str += grimoire_datum["trader_name_bytes"]
+    output_str += "".join(grimoire_datum["bonus_type_bytes"])
+    output_str += "".join(grimoire_datum["skill_id_bytes"])
+    output_str += grimoire_datum["skill_level_bytes"]
+    output_str += grimoire_datum["bonus_level_bytes"]
+
+    ## Make sure we don't lose anything
+    assert len(output_str) == GRIMOIRE_LENGTH*2
+    return output_str.lower()
+
+
+def write_save_file(destination:Path, original_hex:str, grimoire_info:Iterable):
+    grimoire_hex = "".join([recreate_grimoire_hex(x) for x in grimoire_info])
+    start_posn_dec = GRIMOIRE_START*2
+    output_hex = original_hex[:start_posn_dec] + \
+        grimoire_hex + \
+            original_hex[(start_posn_dec+len(grimoire_hex)):]
+
+    assert output_hex == original_hex
+    ## Error checking before output
+    if isinstance(destination, str):
+        destination = Path(destination)
+    if destination.is_dir():
+        destination = destination.joinpath("mo2r00_game.sav")
+    if not destination.exists():
+        destination.touch()
+    
+    destination.write_bytes(bytes.fromhex(output_hex))
+
+
 if __name__ == "__main__":
     grimoire_info, file_hex = parse_save_file("backups/base/mo2r00_game.sav")
+
+
+    write_save_file(Path("backups/base_mod/mo2r00_game.sav"), file_hex, grimoire_info)
