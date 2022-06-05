@@ -251,7 +251,6 @@ def parse_grimoire(grimoire_data):
     bl_dec, bl_hex = parse_addon_bonus_level(grimoire_data)
     skill_name, skill_id_bytes = parse_grimoire_skill(grimoire_data)
     sl_dec, sl_hex = parse_grimoire_skill_level(grimoire_data)
-    print("\n\n")
 
     return {
         "empty": empty_grimoire,
