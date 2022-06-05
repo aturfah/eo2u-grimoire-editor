@@ -154,7 +154,6 @@ def parse_name_of_trader(grimoire_data):
     gg_unicode = "".join(gg_unicode)
     ## Names correspond to full-width characters, need half width
     gg_unicode = unicodedata.normalize("NFKC", gg_unicode)
-    # print("\tGG Name:", len(gg_hex), gg_unicode)
 
     print("\tName:", gg_unicode)
 
