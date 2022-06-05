@@ -56,8 +56,11 @@ GRIMOIRE_ORIGIN_MAP = {
 def parse_grimoire_origin(grimoire_data):
     """Bytes 1-2 define origin"""
     origin_bytes = grimoire_data[0:2]
+    origin = GRIMOIRE_ORIGIN_MAP[origin_bytes[0]]
     print("Origin Bytes:", origin_bytes)
-    print("\tOrigin: {}".format(GRIMOIRE_ORIGIN_MAP[origin_bytes[0]]))
+    print("\tOrigin: {}".format(origin))
+
+    return origin, origin_bytes
 
 GRIMOIRE_CLASS_MAP = {
     "00": "Landsknecht",
@@ -80,8 +83,11 @@ GRIMOIRE_CLASS_MAP = {
 def parse_grimoire_class(grimoire_data):
     """Bytes 3-4 determine originating class"""
     class_bytes = grimoire_data[2:4]
+    grimoire_class = GRIMOIRE_CLASS_MAP[class_bytes[0]]
     print("Class Bytes:", class_bytes)
-    print("\tClass: {}".format(GRIMOIRE_CLASS_MAP[class_bytes[0]]))
+    print("\tClass: {}".format(grimoire_class))
+
+    return grimoire_class, class_bytes
 
 
 def parse_grimoire_origin_details(grimoire_data):
@@ -231,8 +237,8 @@ def parse_addon_bonus_level(grimoire_data):
 
 def parse_grimoire(grimoire_data):
     print(grimoire_data)
-    parse_grimoire_origin(grimoire_data)
-    parse_grimoire_class(grimoire_data)
+    origin, origin_bytes = parse_grimoire_origin(grimoire_data)
+    grim_class, class_bytes = parse_grimoire_class(grimoire_data)
     _, origin_details_bytes = parse_grimoire_origin_details(grimoire_data)
     mystery_bytes = parse_grimoire_mystery_bytes(grimoire_data)
     trader_name, trader_bytes, _ = parse_name_of_trader(grimoire_data)
