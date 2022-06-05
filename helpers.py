@@ -1,5 +1,9 @@
 from pathlib import Path
 from pprint import pprint
+import unicodedata
+
+from unicode_to_sjis import UNICODE_TO_SJIS
+from sjis_to_unicode import SJIS_TO_UNICODE
 
 def load_skillname_hex_maps():
     data_dir = Path("data/")
@@ -93,10 +97,68 @@ def parse_grimoire_mystery_bytes(grimoire_data):
     print("Mystery Bytes:", mystery_bytes)
 
 
+def ascii_to_hex(str_in, padded_length=72):
+    output_arr = []
+    for char in str_in:
+        ## Convert to full width characters
+        if char != " " and ord(char) != 8140:
+            output_arr.append(0xFEE0 + ord(char))
+        else:
+            output_arr.append(0x3000) ## Full Width Space?
+
+    output = ""
+    for idx in range(len(output_arr)):
+        try: 
+            output += UNICODE_TO_SJIS[output_arr[idx]]
+        except Exception:
+            raise RuntimeError("Invalid character in name: '{}'".format(str_in[idx]))
+
+    output = output.replace(" ", "")
+
+    while len(output) < padded_length:
+        output += "0"
+
+    if len(output) > padded_length:
+        raise RuntimeError("Name too Long")
+
+    return output
+
 def parse_name_of_trader(grimoire_data):
     """Bytes 9-44 are the Trader Name"""
     name_bytes = grimoire_data[8:44]
     print("Name Bytes:", "".join(name_bytes))
+
+    gg_unicode = []
+    cur_char = []
+    for h_number in [x.upper() for x in name_bytes]:
+        if not cur_char and h_number in SJIS_TO_UNICODE.keys():
+            gg_unicode.append(SJIS_TO_UNICODE[h_number])
+            if gg_unicode[-1] != 0:
+                gg_unicode[-1] = chr(gg_unicode[-1])
+            continue
+
+        cur_char.append(h_number)
+        if len(cur_char) == 2:
+            char_hex = "".join(cur_char)
+            char_unic = SJIS_TO_UNICODE[char_hex]
+            gg_unicode.append(chr(char_unic))
+            cur_char = []
+
+    ## Entirely 0; unknown origin
+    gg_unicode = [x for x in gg_unicode if x != 0]
+    unknown_origin = False
+    if not gg_unicode:
+        unknown_origin = True
+        gg_unicode = []
+
+    gg_unicode = "".join(gg_unicode)
+    ## Names correspond to full-width characters, need half width
+    gg_unicode = unicodedata.normalize("NFKC", gg_unicode)
+    # print("\tGG Name:", len(gg_hex), gg_unicode)
+
+    print("\tName:", gg_unicode)
+
+    return gg_unicode, "".join(name_bytes), unknown_origin
 
 
 GRIMOIRE_BONUS_TYPE_MAP= {
