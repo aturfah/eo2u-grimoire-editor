@@ -27,6 +27,7 @@ def modify_grimoire_skill_level(grimoire_datum:dict, skill_level:int):
         raise ValueError("Skill level must be between [0-10]")
 
     level_hex = hex(skill_level).removeprefix("0x")
+    level_hex = "0{}".format(level_hex)
 
     grimoire_datum = dict(grimoire_datum)
     grimoire_datum["skill_level"] = skill_level
