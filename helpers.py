@@ -90,11 +90,15 @@ def parse_grimoire_origin_details(grimoire_data):
     orig_details_bytes = grimoire_data[4:6]
     print("Origin Details Bytes:", orig_details_bytes)
 
+    return "", orig_details_bytes
+
 
 def parse_grimoire_mystery_bytes(grimoire_data):
     """Bytes 7-8 are Mystery Byte"""
     mystery_bytes = grimoire_data[6:8]
     print("Mystery Bytes:", mystery_bytes)
+
+    return "".join(mystery_bytes)
 
 
 def ascii_to_hex(str_in, padded_length=72):
@@ -189,41 +193,53 @@ GRIMOIRE_BONUS_TYPE_MAP= {
 def parse_addon_bonus_type(grimoire_data):
     """Bytes 45-46 are the grimoire bonus type"""
     bonus_type_bytes = grimoire_data[44:46]
-    print("Bonus Type Bytes:", bonus_type_bytes)
-    print("\tBonus Type:", GRIMOIRE_BONUS_TYPE_MAP["".join(bonus_type_bytes)])
+    bonus_type = GRIMOIRE_BONUS_TYPE_MAP["".join(bonus_type_bytes)]
+    # print("Bonus Type Bytes:", bonus_type_bytes)
+    # print("\tBonus Type:", bonus_type)
+
+    return bonus_type, bonus_type_bytes
 
 
 def parse_grimoire_skill(grimoire_data):
     """Bytes 47-48 are the grimoire skill ID"""
     skill_id_bytes = grimoire_data[46:48]
-    print("Grimoire Skill Bytes:", skill_id_bytes)
-    print("\tGrimoire Skill:", HEX_TO_NAME["".join(skill_id_bytes)])
+    skill_name = HEX_TO_NAME["".join(skill_id_bytes)]
+    # print("Grimoire Skill Bytes:", skill_id_bytes)
+    # print("\tGrimoire Skill:", skill_name)
+
+    return skill_name, skill_id_bytes
 
 
 def parse_grimoire_skill_level(grimoire_data):
     """Bytes 49 are the grimoire skill level"""
     skill_level_bytes = grimoire_data[48]
-    print("Skill Level Bytes:", skill_level_bytes)
-    print("\tSkill Level:",int(skill_level_bytes, base=16))
+    skill_level_dec = int(skill_level_bytes, base=16)
+    # print("Skill Level Bytes:", skill_level_bytes)
+    # print("\tSkill Level:", skill_level_dec)
+
+    return skill_level_dec, skill_level_bytes
 
 def parse_addon_bonus_level(grimoire_data):
     """Bytes 50 are the grimoire bonus level"""
     bonus_level_bytes = grimoire_data[49]
-    print("Bonus Level Bytes:", bonus_level_bytes)
-    print("\tBonus Level:",int(bonus_level_bytes, base=16))
+    bonus_level_dec = int(bonus_level_bytes, base=16)
+    # print("Bonus Level Bytes:", bonus_level_bytes)
+    # print("\tBonus Level:", bonus_level_dec)
+
+    return bonus_level_dec, bonus_level_bytes
 
 
 def parse_grimoire(grimoire_data):
     print(grimoire_data)
     parse_grimoire_origin(grimoire_data)
     parse_grimoire_class(grimoire_data)
-    parse_grimoire_origin_details(grimoire_data)
-    parse_grimoire_mystery_bytes(grimoire_data)
-    parse_name_of_trader(grimoire_data)
-    parse_addon_bonus_type(grimoire_data)
-    parse_addon_bonus_level(grimoire_data)
-    parse_grimoire_skill(grimoire_data)
-    parse_grimoire_skill_level(grimoire_data)
+    _, origin_details_bytes = parse_grimoire_origin_details(grimoire_data)
+    mystery_bytes = parse_grimoire_mystery_bytes(grimoire_data)
+    trader_name, trader_bytes, _ = parse_name_of_trader(grimoire_data)
+    bonus_type, bonus_type_bytes = parse_addon_bonus_type(grimoire_data)
+    bl_dec, bl_hex = parse_addon_bonus_level(grimoire_data)
+    skill_name, skill_id_bytes = parse_grimoire_skill(grimoire_data)
+    sl_dec, sl_hex = parse_grimoire_skill_level(grimoire_data)
     print("\n\n")
 
     return 1
@@ -265,4 +281,4 @@ def parse_save_file(fname_path:Path):
     return grimoire_info, "".join(file_hex)
 
 if __name__ == "__main__":
-    parse_save_file("backups/base/mo2r00_game.sav")
+    grimoire_info, file_hex = parse_save_file("backups/base/mo2r00_game.sav")
