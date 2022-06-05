@@ -182,12 +182,12 @@ GRIMOIRE_BONUS_TYPE_MAP= {
     "8802": "Drop amount up",
     "8902": "Victory HP",
     "8A02": "Victory TP",
-    "8B02": "Auto-Heal",
-    "8C02": "Self-Heal Amp",
-    "8D02": "Force Up",
-    "8E02": "Grimoire Skill Level Up",
-    "8F02": "Turn TP Recover",
-    "9002": "TP Cost Recovery"
+    "8B02": "Auto-Heal", ## Legendary
+    "8C02": "Self-Heal Amp", ## Legendary
+    "8D02": "Force Up", ## Legendary
+    "8E02": "Grimoire Skill Level Up", ## Legendary
+    "8F02": "Turn TP Recover", ## Legendary
+    "9002": "TP Cost Recovery" ## Legendary
 }
 
 
@@ -333,7 +333,6 @@ def write_save_file(destination:Path, original_hex:str, grimoire_info:Iterable):
         grimoire_hex + \
             original_hex[(start_posn_dec+len(grimoire_hex)):]
 
-    assert output_hex == original_hex
     ## Error checking before output
     if isinstance(destination, str):
         destination = Path(destination)
@@ -348,5 +347,8 @@ def write_save_file(destination:Path, original_hex:str, grimoire_info:Iterable):
 if __name__ == "__main__":
     grimoire_info, file_hex = parse_save_file("backups/base/mo2r00_game.sav")
 
+    # for grim_inf in grimoire_info:
+    #     grim_inf["skill_id_bytes"] = ["4E", "04"]
+    #     grim_inf["bonus_type_bytes"] = ["8E", "02"]
 
     write_save_file(Path("backups/base_mod/mo2r00_game.sav"), file_hex, grimoire_info)
