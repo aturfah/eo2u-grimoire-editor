@@ -364,7 +364,7 @@ FF 00 | Blinding Curse
 6D 01 | Phys DEF Up (Passive)
 6E 01 | Deadly Resolve (Passive)
 6F 01 | Auto Lick (Passive)
-70 01 | Loyality Mastery (Passive)
+70 01 | Loyalty Mastery (Passive)
 71 01 | Claw Mastery (Passive)
 72 01 | Preemptive Roar (Passive)
 73 01 | Lick Wounds
@@ -408,7 +408,7 @@ FF 00 | Blinding Curse
 99 01 | Link Order
 9A 01 | Link Order II
 9B 01 | Ad Nihilo
-9C 01 | Negotation
+9C 01 | Negotiation
 9D 01 | White Noble
 9E 01 | Clearance
 9F 01 | Cheer
@@ -1057,3 +1057,4 @@ F0 04 | Spider Lily
 F1 04 | Light Speed
 F2 04 | None
 F3 04 | None
+00 00 | (Empty)

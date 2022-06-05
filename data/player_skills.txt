@@ -1,3 +1,4 @@
+(Empty)
 HP Up
 TP Up
 Phys ATK Up
@@ -305,9 +306,12 @@ Delayed Chase
 Overkiller
 Full Slash
 Resonance
+Force Mastery
 Vital Shut
 Mind Shut
 Absorb
+Force Charge
+Force Shield
 Limit Break
 Weapon Free
 Fire Wave
