@@ -20,18 +20,18 @@ def load_skillname_hex_maps():
         name = name.replace("(Passive)", "").strip()
         hex_id = hex_id.strip().replace(" ", "")
 
-        # if name == "Flee":
-        #     print("Hi")
-        #     print(name in player_skills)
-        #     print(name in enemy_grimoire_skills)
-        #     raise RuntimeError("AAAHHH")
+        if name == "Comet Drop":
+            print("Hi")
+            print(name in player_skills)
+            print(name in enemy_grimoire_skills)
+            # raise RuntimeError("AAAHHH")
 
         if (name in player_skills) or (name in enemy_grimoire_skills):
             name_to_hex[name] = hex_id
             hex_to_name[hex_id] = name
 
-    print(name_to_hex["Power Gel"])
-    print(hex_to_name["0403"])
+    print(name_to_hex["Comet Drop"])
+    print(hex_to_name["8001"])
 
     return name_to_hex, hex_to_name
 
@@ -45,8 +45,9 @@ GRIMOIRE_ORIGIN_MAP = {
     "02": "Traded (retired Member)",
     "04": "Created",
     "08": "Traded (#1)", ## TODO: Verify
-    "30": "Unknown", ## TODO: Verify
+    "30": "Traded (#2)", ## TODO: Verify
     "40": "Traded (in-game)",
+    "44": "Traded (#3)", ## TODO: Verify
     "48": "?",
     "80": "Traded (Guild Card)"
 }
