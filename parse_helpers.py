@@ -346,9 +346,4 @@ def write_save_file(destination:Path, original_hex:str, grimoire_info:Iterable):
 
 if __name__ == "__main__":
     grimoire_info, file_hex = parse_save_file("backups/base/mo2r00_game.sav")
-
-    # for grim_inf in grimoire_info:
-    #     grim_inf["skill_id_bytes"] = ["4E", "04"]
-    #     grim_inf["bonus_type_bytes"] = ["8E", "02"]
-
     write_save_file(Path("backups/base_mod/mo2r00_game.sav"), file_hex, grimoire_info)
