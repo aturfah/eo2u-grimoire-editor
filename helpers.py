@@ -30,9 +30,6 @@ def load_skillname_hex_maps():
             name_to_hex[name] = hex_id
             hex_to_name[hex_id] = name
 
-    print(name_to_hex["Comet Drop"])
-    print(hex_to_name["8001"])
-
     return name_to_hex, hex_to_name
 
 NAME_TO_HEX, HEX_TO_NAME = load_skillname_hex_maps()
@@ -181,20 +178,6 @@ def parse_save_file(fname_path:Path):
     file_hex = file_bytes.hex(" ").split(" ")
     num_bytes = len(file_hex)
 
-    ## Locate Natural Instinct Lv9 Grimoire
-    # hex_str = "".join(file_hex)
-    # match_idx = hex_str.index("0000820109")
-    # print(match_idx)
-    # grimoire_str = hex_str[(match_idx-88):(match_idx+12)]
-    # print(grimoire_str)
-    # print(len(grimoire_str))
-    # print()
-    # abs_start = match_idx - 88
-    # print(abs_start)
-    # print(hex_str[abs_start:(abs_start+100)])
-
-    # raise RuntimeError("AAAHHH")
-
     if GRIMOIRE_START > num_bytes:
         raise RuntimeError("Invalid File")
 
@@ -206,13 +189,11 @@ def parse_save_file(fname_path:Path):
         if len(grimoire_data) == GRIMOIRE_LENGTH:
             print("Grimoire #{}".format(counter+1))
             grimoire_data = [x.upper() for x in grimoire_data]
-            # print(" ".join(grimoire_data))
             # grimoire_data = "40	00	07	00	02	17	07	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	DB	00	0A	00".split("\t")
             g_info = parse_grimoire(grimoire_data)
-            # break
-            # if g_info:
-            #     grimoire_info.append(g_info)
-            # # break
+            if g_info:
+                grimoire_info.append(g_info)
+            
             counter += 1
             grimoire_data = []
 
