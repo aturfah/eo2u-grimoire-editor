@@ -22,6 +22,18 @@ def modify_grimoire_skill(grimoire_datum:dict, skill_name:str):
     return grimoire_datum
 
 
+def modify_grimoire_skill_level(grimoire_datum:dict, skill_level:int):
+    if skill_level not in [x for x in range(11)]:
+        raise ValueError("Skill level must be between [0-10]")
+
+    level_hex = hex(skill_level).removeprefix("0x")
+
+    grimoire_datum = dict(grimoire_datum)
+    grimoire_datum["skill_level"] = skill_level
+    grimoire_datum["skill_level_bytes"] = level_hex
+    return grimoire_datum
+
+
 def modify_grimoire_class(grimoire_datum:dict, class_name:str):
     """Set grimoire class; DOES NOT DO ANYTHING."""
     class_name = class_name.strip()
@@ -70,6 +82,7 @@ if __name__ == "__main__":
     pprint(grimoire_info[0])
 
     grimoire_info[0] = modify_grimoire_skill(grimoire_info[0], "Madness Curse")
+    grimoire_info[0] = modify_grimoire_skill_level(grimoire_info[0], 4)
     grimoire_info[0] = modify_grimoire_class(grimoire_info[0], "??? #1") ## Does this do anything?
     grimoire_info[0] = modify_grimoire_bonus(grimoire_info[0], "Cut Up")
     grimoire_info[0] = modify_grimoire_bonus_level(grimoire_info[0], 3)
