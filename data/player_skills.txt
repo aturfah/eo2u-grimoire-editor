@@ -70,6 +70,7 @@ Line Cure
 Line Heal
 Aegis
 Armor of Light
+Flee
 Whip Mastery
 Gag
 Cuffs
