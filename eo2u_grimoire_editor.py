@@ -22,18 +22,26 @@ def load_file():
 
     eel.prompt_alerts("Successfully loaded file: {}".format(SFM.filename))
 
-@eel.expose
-def prepare_ui():
-    eel.setGrimoireDropdown(SFM.get_grimoire_labels())
 
+@eel.expose
+def get_grimoire_dropdown_options():
+    return SFM.get_grimoire_labels()
+
+
+@eel.expose
+def get_skill_names():
     skill_names = list(ph.NAME_TO_HEX.keys())
     skill_names.sort()
-    eel.setSkillNameDropdown(skill_names)()
 
+    return skill_names
+
+
+@eel.expose
+def get_bonus_types():
     bonus_names = list(ph.GRIMOIRE_BONUS_TYPE_MAP.values())
     bonus_names.sort()
-    eel.setGrimoireBonusDropdown(bonus_names)()
 
+    return bonus_names
 
 @eel.expose
 def get_chosen_grimoire():

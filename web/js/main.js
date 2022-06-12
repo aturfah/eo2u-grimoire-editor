@@ -4,10 +4,10 @@ function prompt_alerts(description) {
 }
 
 // Set the elements in the grimoire dropdown list
-eel.expose(setGrimoireDropdown)
-function setGrimoireDropdown(grimoireList) {
-  const grimoireDropdown = document.getElementById("grimoire-dropdown");
+async function setGrimoireDropdown() {
+  let grimoireList = await eel.get_grimoire_dropdown_options()()
 
+  const grimoireDropdown = document.getElementById("grimoire-dropdown");
   grimoireList.forEach((name, idx) => {
     let opt = document.createElement("option");
     opt.value = idx;
@@ -17,8 +17,9 @@ function setGrimoireDropdown(grimoireList) {
 }
 
 // Set the elements in the skill selection dropdown
-eel.expose(setSkillNameDropdown)
-function setSkillNameDropdown(skillList) {
+async function setSkillNameDropdown() {
+  let skillList = await eel.get_skill_names()()
+
   skillList.forEach(val => {
     const opt = document.createElement("option");
     opt.value = val;
@@ -28,8 +29,9 @@ function setSkillNameDropdown(skillList) {
 }
 
 // Set the elements in the grimoire bonus dropdown
-eel.expose(setGrimoireBonusDropdown)
-function setGrimoireBonusDropdown(bonusList) {
+async function setGrimoireBonusDropdown() {
+  let bonusList = await eel.get_bonus_types()()
+
   bonusList.forEach(val => {
     const opt = document.createElement("option");
     opt.value = val;
@@ -41,7 +43,6 @@ function setGrimoireBonusDropdown(bonusList) {
 // Render the chosen Grimoire
 async function renderChosenGrimoire() {
   const grimoireDatum = await eel.get_chosen_grimoire()()
-  console.log(grimoireDatum);
 
   // Set the skill name
   let skillNameSelect = document.getElementById("skill-name");
@@ -58,7 +59,6 @@ async function renderChosenGrimoire() {
   // Set the bonus type level
   let bonusLevelSelect = document.getElementById("bonus-level")
   bonusLevelSelect.value = String(grimoireDatum["bonus_level"]);
- 
 }
 
 
@@ -72,9 +72,9 @@ function loadMethod() {
   })
   .then(() => {
     console.log("Prepare UI")
-    return eel.prepare_ui();
-  })
-  .then(() => {
+    setGrimoireDropdown();
+    setSkillNameDropdown();
+    setGrimoireBonusDropdown();
     renderChosenGrimoire();
   })
   .then(() => {
