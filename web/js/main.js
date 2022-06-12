@@ -46,17 +46,16 @@ function renderChosenGrimoire(grimoireDatum) {
   // Set the skill name
   const skillNameSelect = document.getElementById("skill-name")
   skillNameSelect.setAttribute("value", grimoireDatum["skill_name"]);
-  skillNameSelect.dispatchEvent(new Event('change'));
 
   // Set the bonus type
   const bonusTypeSelect = document.getElementById("bonus-type");
   bonusTypeSelect.setAttribute("value", grimoireDatum["bonus_type"]);
-  bonusTypeSelect.dispatchEvent(new Event('change'));
 }
 
 
 // Load the file from disk
 function loadMethod() {
+  // Review this: https://github.com/ChrisKnott/Eel#return-values
   new Promise((resolve, reject) => {
     console.log('Load File');
     eel.load_file()
@@ -64,14 +63,9 @@ function loadMethod() {
   })
   .then(() => {
     console.log("Prepare UI")
-    eel.prepare_ui();
+    return eel.prepare_ui();
   })
-  .then(() => {
-    const skillNameSelect = document.getElementById("skill-name")
-    skillNameSelect.dispatchEvent(new Event('change'));
-    const bonusTypeSelect = document.getElementById("bonus-type");
-    bonusTypeSelect.dispatchEvent(new Event('change'));
-  })
+  .then()
   .then(() => {
       console.log("Step #4")
       document.getElementById("reset-button").removeAttribute("disabled")
