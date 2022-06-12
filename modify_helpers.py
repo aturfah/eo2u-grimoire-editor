@@ -6,7 +6,6 @@ from parse_helpers import NAME_TO_HEX, GRIMOIRE_BONUS_TYPE_MAP, GRIMOIRE_CLASS_M
 
 GRIMOIRE_CLASS_ID_MAP = {v: k for k, v in GRIMOIRE_CLASS_MAP.items()}
 GRIMOIRE_BONUS_ID_MAP = {v: k for k, v in GRIMOIRE_BONUS_TYPE_MAP.items()}
-pprint(GRIMOIRE_CLASS_ID_MAP)
 
 def modify_grimoire_skill(grimoire_datum:dict, skill_name:str):
     """Set the grimoire's skill"""
