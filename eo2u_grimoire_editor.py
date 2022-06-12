@@ -43,9 +43,18 @@ def get_bonus_types():
 
     return bonus_names
 
+
 @eel.expose
 def get_chosen_grimoire():
     return SFM.get_chosen_grimoire()
+
+
+@eel.expose
+def update_chosen_grimoire(new_idx):
+    if not isinstance(new_idx, int):
+        new_idx = int(new_idx)
+
+    SFM.chosen_idx = new_idx
 
 
 @eel.expose

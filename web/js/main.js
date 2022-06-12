@@ -62,6 +62,13 @@ async function renderChosenGrimoire() {
 }
 
 
+async function grimoireSelectCallback() {
+  const newIdx = document.getElementById("grimoire-dropdown").value
+  eel.update_chosen_grimoire(newIdx);
+  await renderChosenGrimoire();
+}
+
+
 // Load the file from disk
 function loadMethod() {
   // Review this: https://github.com/ChrisKnott/Eel#return-values
