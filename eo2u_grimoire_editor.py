@@ -1,4 +1,5 @@
 import eel
+import parse_helpers as ph
 
 from save_file_manager import SaveFileManager
 
@@ -20,7 +21,13 @@ def load_file():
         eel.prompt_alerts(str(exc))
 
     eel.prompt_alerts("Successfully loaded file: {}".format(SFM.filename))
+
+@eel.expose
+def prepare_ui():
     eel.setGrimoireDropdown(SFM.get_grimoire_labels())
+    eel.setSkillNameDropdown(list(ph.NAME_TO_HEX.keys()))
+    eel.setGrimoireBonusDropdown(list(ph.GRIMOIRE_BONUS_TYPE_MAP.values()))
+    eel.renderChosenGrimoire(SFM.get_chosen_grimoire())
 
 
 @eel.expose
