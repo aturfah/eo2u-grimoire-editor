@@ -166,7 +166,7 @@ def parse_name_of_trader(grimoire_data):
 
 
 GRIMOIRE_BONUS_TYPE_MAP= {
-    "0000": "None",
+    "0000": "(None)",
     "7C02": "Cut Up",
     "7D02": "Stab Up",
     "7E02": "Bash Up",
