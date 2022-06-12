@@ -235,15 +235,48 @@ def parse_grimoire(grimoire_data):
     if set(grimoire_data) == {"00"}:
         empty_grimoire = True
 
-    origin, origin_bytes = parse_grimoire_origin(grimoire_data)
-    grim_class, class_bytes = parse_grimoire_class(grimoire_data)
-    origin_details, origin_details_bytes = parse_grimoire_origin_details(grimoire_data)
+    try:
+        origin, origin_bytes = parse_grimoire_origin(grimoire_data)
+    except Exception as exc:
+        raise RuntimeError("Error Parsing Grimoire Origin: {}".format(exc))
+
+    try:
+        grim_class, class_bytes = parse_grimoire_class(grimoire_data)
+    except Exception as exc:
+        raise RuntimeError("Error Parsing Grimoire Class: {}".format(exc))
+
+    try:
+        origin_details, origin_details_bytes = parse_grimoire_origin_details(grimoire_data)
+    except Exception as exc:
+        raise RuntimeError("Error Parsing Grimoire Origin: {}".format(exc))
+
+    try:
+        trader_name, trader_bytes, _ = parse_name_of_trader(grimoire_data)
+    except Exception as exc:
+        raise RuntimeError("Error Parsing Grimoire Trader Name: {}".format(exc))
+
+    try:
+        bonus_type, bonus_type_bytes = parse_addon_bonus_type(grimoire_data)
+    except Exception as exc:
+        raise RuntimeError("Error Parsing Grimoire Bonus: {}".format(exc))
+
+    try:
+        bl_dec, bl_hex = parse_addon_bonus_level(grimoire_data)
+    except Exception as exc:
+        raise RuntimeError("Error Parsing Grimoire Bonus Level: {}".format(exc))
+
+    try:
+        skill_name, skill_id_bytes = parse_grimoire_skill(grimoire_data)
+    except Exception as exc:
+        raise RuntimeError("Error Parsing Grimoire Skill: {}".format(exc))
+
+    try:
+        sl_dec, sl_hex = parse_grimoire_skill_level(grimoire_data)
+    except Exception as exc:
+        raise RuntimeError("Error Parsing Grimoire Skill Level: {}".format(exc))
+
+    ## No clue what this does
     mystery_bytes = parse_grimoire_mystery_bytes(grimoire_data)
-    trader_name, trader_bytes, _ = parse_name_of_trader(grimoire_data)
-    bonus_type, bonus_type_bytes = parse_addon_bonus_type(grimoire_data)
-    bl_dec, bl_hex = parse_addon_bonus_level(grimoire_data)
-    skill_name, skill_id_bytes = parse_grimoire_skill(grimoire_data)
-    sl_dec, sl_hex = parse_grimoire_skill_level(grimoire_data)
 
     return {
         "original_hex": "".join(grimoire_data),
