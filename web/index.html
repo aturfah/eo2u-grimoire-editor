@@ -23,12 +23,37 @@
                 <div class="button-div text-center">
                     <button class="btn btn-primary" id="load-button" type="submit">Load File</button>
                     <button class="btn btn-primary" id="save-button" type="submit">Save File</button>
-                    <button class="btn btn-warning" disabled="disabled" type="submit">Reset Grimoire</button>
+                    <button class="btn btn-warning" id="reset-button" disabled="disabled" type="submit">Reset Grimoire</button>
                 </div>
 
                 <!--Grimoire Choice Dropdown-->
-                <div class="grimoire-dropdown text-center">
-                    Choose Grimoire: <select id="grimoire-dropdown"></select>
+                <div class="text-center">
+                    Chosen Grimoire: <select class="grimoire-dropdown" id="grimoire-dropdown"></select>
+                </div>
+
+                <!--Chosen Grimoire Data-->
+                <div class="chosen-grimoire">
+                    <p>Skill Name: <select id="skill-name"></select></p>
+                    <p>Skill Level: <select id="skill-level">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select></p>
+                    <p>Bonus Type: <select id="bonus-type"></select></p>
+                    <p>Bonus Level: <select id="bonus-level">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select></p>
                 </div>
             </div>
             

@@ -13,3 +13,7 @@ div.button-div {
 .grimoire-dropdown {
   font-family: monospace;
 }
+
+.chosen-grimoire {
+  padding: 5px;
+}
