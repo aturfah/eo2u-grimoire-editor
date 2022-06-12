@@ -1,4 +1,4 @@
-document.getElementById("load-button").addEventListener("click", ()=>{eel.get_random_number()}, false);
+document.getElementById("load-button").addEventListener("click", ()=>{eel.load_file()}, false);
 document.getElementById("save-button").addEventListener("click", ()=>{eel.get_date()}, false);
 
 
