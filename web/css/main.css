@@ -9,3 +9,7 @@ div.button-div {
   border: 3px solid green;
   padding: 10px;
 }
+
+.grimoire-dropdown {
+  font-family: monospace;
+}

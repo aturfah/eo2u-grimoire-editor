@@ -6,6 +6,8 @@
     <title>EO2U Grimoire Editor</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/eel.js"></script> 
@@ -23,9 +25,16 @@
                     <button class="btn btn-primary" id="save-button" type="submit">Save File</button>
                     <button class="btn btn-warning" disabled="disabled" type="submit">Reset Grimoire</button>
                 </div>
+
+                <!--Grimoire Choice Dropdown-->
+                <div class="grimoire-dropdown text-center">
+                    Choose Grimoire: <select id="grimoire-dropdown"></select>
+                </div>
             </div>
+            
         </div>
     </div>
 </body>
+
 <script src="js/main.js"></script>
 </html>
