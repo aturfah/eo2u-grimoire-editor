@@ -25,8 +25,15 @@ def load_file():
 @eel.expose
 def prepare_ui():
     eel.setGrimoireDropdown(SFM.get_grimoire_labels())
-    eel.setSkillNameDropdown(list(ph.NAME_TO_HEX.keys()))
-    eel.setGrimoireBonusDropdown(list(ph.GRIMOIRE_BONUS_TYPE_MAP.values()))
+
+    skill_names = list(ph.NAME_TO_HEX.keys())
+    skill_names.sort()
+    eel.setSkillNameDropdown(skill_names)
+
+    bonus_names = list(ph.GRIMOIRE_BONUS_TYPE_MAP.values())
+    bonus_names.sort()
+    eel.setGrimoireBonusDropdown(bonus_names)
+    
     eel.renderChosenGrimoire(SFM.get_chosen_grimoire())
 
 
