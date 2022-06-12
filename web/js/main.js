@@ -39,17 +39,26 @@ function setGrimoireBonusDropdown(bonusList) {
 }
 
 // Render the chosen Grimoire
-eel.expose(renderChosenGrimoire)
-function renderChosenGrimoire(grimoireDatum) {
+async function renderChosenGrimoire() {
+  const grimoireDatum = await eel.get_chosen_grimoire()()
   console.log(grimoireDatum);
 
   // Set the skill name
-  const skillNameSelect = document.getElementById("skill-name")
-  skillNameSelect.setAttribute("value", grimoireDatum["skill_name"]);
+  let skillNameSelect = document.getElementById("skill-name");
+  skillNameSelect.value = grimoireDatum["skill_name"];
 
+  // Set the grimire level
+  let skillLevelSelect = document.getElementById("skill-level")
+  skillLevelSelect.value = String(grimoireDatum["skill_level"]);
+  
   // Set the bonus type
-  const bonusTypeSelect = document.getElementById("bonus-type");
-  bonusTypeSelect.setAttribute("value", grimoireDatum["bonus_type"]);
+  let bonusTypeSelect = document.getElementById("bonus-type");
+  bonusTypeSelect.value = grimoireDatum["bonus_type"];
+
+  // Set the bonus type level
+  let bonusLevelSelect = document.getElementById("bonus-level")
+  bonusLevelSelect.value = String(grimoireDatum["bonus_level"]);
+ 
 }
 
 
@@ -58,14 +67,16 @@ function loadMethod() {
   // Review this: https://github.com/ChrisKnott/Eel#return-values
   new Promise((resolve, reject) => {
     console.log('Load File');
-    eel.load_file()
+    eel.load_file();
     resolve();
   })
   .then(() => {
     console.log("Prepare UI")
     return eel.prepare_ui();
   })
-  .then()
+  .then(() => {
+    renderChosenGrimoire();
+  })
   .then(() => {
       console.log("Step #4")
       document.getElementById("reset-button").removeAttribute("disabled")
@@ -75,6 +86,11 @@ function loadMethod() {
   })
   .then(() => {
       console.log('Finished');
+      // Change Event
+      const skillNameSelect = document.getElementById("skill-name")
+      console.log(skillNameSelect.value);
+      const bonusTypeSelect = document.getElementById("bonus-type");
+      console.log(bonusTypeSelect.value);
   });
 }
 
