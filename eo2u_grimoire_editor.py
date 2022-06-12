@@ -33,7 +33,10 @@ def prepare_ui():
     bonus_names = list(ph.GRIMOIRE_BONUS_TYPE_MAP.values())
     bonus_names.sort()
     eel.setGrimoireBonusDropdown(bonus_names)
-    
+
+
+@eel.expose
+def render_chosen_grimoire():
     eel.renderChosenGrimoire(SFM.get_chosen_grimoire())
 
 
