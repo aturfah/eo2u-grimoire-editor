@@ -46,7 +46,7 @@ class SaveFileManager():
                 continue
 
             bonus_str = ""
-            if g_datum["bonus_type"] != "None":
+            if g_datum["bonus_type"] != "(None)":
                 bonus_str = "({name} Lv{level})".format(
                     name=g_datum["bonus_type"],
                     level=g_datum["bonus_level"]
