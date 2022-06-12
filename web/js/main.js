@@ -38,18 +38,18 @@ function setGrimoireBonusDropdown(bonusList) {
   });
 }
 
-// Set the bonus for the 
-
-// Render the
+// Render the chosen Grimoire
 eel.expose(renderChosenGrimoire)
 function renderChosenGrimoire(grimoireDatum) {
+  console.log(grimoireDatum);
+
   // Set the skill name
   const skillNameSelect = document.getElementById("skill-name")
   skillNameSelect.setAttribute("value", grimoireDatum["skill_name"]);
   skillNameSelect.dispatchEvent(new Event('change'));
 
   // Set the bonus type
-  const bonusTypeSelect = document.getElementById("bonus-type")
+  const bonusTypeSelect = document.getElementById("bonus-type");
   bonusTypeSelect.setAttribute("value", grimoireDatum["bonus_type"]);
   bonusTypeSelect.dispatchEvent(new Event('change'));
 }
@@ -65,6 +65,12 @@ function loadMethod() {
   .then(() => {
     console.log("Prepare UI")
     eel.prepare_ui();
+  })
+  .then(() => {
+    const skillNameSelect = document.getElementById("skill-name")
+    skillNameSelect.dispatchEvent(new Event('change'));
+    const bonusTypeSelect = document.getElementById("bonus-type");
+    bonusTypeSelect.dispatchEvent(new Event('change'));
   })
   .then(() => {
       console.log("Step #4")
