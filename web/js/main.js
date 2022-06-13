@@ -61,15 +61,24 @@ async function renderChosenGrimoire() {
   bonusLevelSelect.value = String(grimoireDatum["bonus_level"]);
 }
 
-
+// When the grimoire dropdown is changed, update the python class
 async function grimoireSelectCallback() {
-  const newIdx = document.getElementById("grimoire-dropdown").value
-  eel.update_chosen_grimoire(newIdx);
+  const newIdx = document.getElementById("grimoire-dropdown").value;
+  await eel.update_chosen_grimoire(newIdx)();
   await renderChosenGrimoire();
 }
 
 
-// Load the file from disk
+// When the skill select dropdown is changed, update the python class
+async function skillSelectCallback() {
+  const newSkill = document.getElementById("skill-name").value;
+  await eel.update_grimoire_skill(newSkill)();
+  await setGrimoireDropdown();
+  await renderChosenGrimoire();
+}
+
+
+// Load the file from disk and prepare UI
 function loadMethod() {
   // Review this: https://github.com/ChrisKnott/Eel#return-values
   new Promise((resolve, reject) => {
@@ -101,6 +110,14 @@ function loadMethod() {
   });
 }
 
+// Reset grimoire to original stats
+async function resetMethod() {
+  await eel.reset_grimoire();
+  await setGrimoireDropdown();
+  await renderChosenGrimoire();
+}
+
 // Assign functionality to buttons
 document.getElementById("load-button").addEventListener("click", ()=>{loadMethod()}, false);
 document.getElementById("save-button").addEventListener("click", ()=>{eel.get_date()}, false);
+document.getElementById("reset-button").addEventListener("click", ()=>{resetMethod()}, false);
