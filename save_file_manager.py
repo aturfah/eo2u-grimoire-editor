@@ -2,6 +2,7 @@ from copy import deepcopy
 from datetime import datetime
 # import tkinter as tk
 from tkinter import filedialog
+from pprint import pprint
 
 import modify_helpers as mh
 import parse_helpers as ph
@@ -59,13 +60,27 @@ class SaveFileManager():
 
         return output
 
+    def set_grimoire_skill(self, skill_name):
+        """Set the skill ID for the grimoire and the corresponding hex."""
+        skill_bytes = ph.NAME_TO_HEX[skill_name]
+
+        self.grimoire_data[self.chosen_idx]["skill_name"] = skill_name
+        self.grimoire_data[self.chosen_idx]["skill_id_bytes"] = skill_bytes
+
+        if "".join(skill_bytes) == "0000":
+            self.set_grimoire_level(0)
+
+    def set_grimoire_level(self, new_level):
+        self.grimoire_data[self.chosen_idx]["skill_level"] = new_level
+        self.grimoire_data[self.chosen_idx]["skill_level_bytes"] = hex(new_level).removeprefix("0x").zfill(2)
+
     def get_chosen_grimoire(self):
+        """Get the grimoire currently chosen."""
         return self.grimoire_data[self.chosen_idx]
 
     def reset_chosen_grimoire(self):
         """Return a grimoire to its original state."""
         self.grimoire_data[self.chosen_idx] = deepcopy(self.orig_grimoire_data[self.chosen_idx])
-
 
     def current_time(self):
         """for debugging purposes"""
