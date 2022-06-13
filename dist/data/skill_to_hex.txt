@@ -1,0 +1,1060 @@
+02 00 | HP Up (Passive)
+03 00 | TP Up (Passive)
+04 00 | Phys ATK Up (Passive)
+05 00 | Phys DEF Up (Passive)
+06 00 | Sword Mastery (Passive)
+07 00 | Axe Mastery (Passive)
+08 00 | Fencer (Passive)
+09 00 | Double Attack (Passive)
+0A 00 | War Cry
+0B 00 | Swordbreaker
+0C 00 | Triple Charge
+0D 00 | Raging Edge
+0E 00 | Tornado
+0F 00 | Falcon Slash
+10 00 | Blinding Slash
+11 00 | Hurricane
+12 00 | Boomerang Axe
+13 00 | Stunning Smash
+14 00 | Head Bash
+15 00 | Charge Smash
+16 00 | Heavy Smash
+17 00 | Fire Chaser
+18 00 | Ice Chaser
+19 00 | Volt Chaser
+1A 00 | Mine (Passive)
+1B 00 | Full Charge
+1C 00 | Full Gain
+1D 00 | DUMMY
+1E 00 | DUMMY
+1F 00 | DUMMY
+20 00 | HP Up (Passive)
+21 00 | TP Up (Passive)
+22 00 | Curb ATK Up (Passive)
+23 00 | Speed Up (Passive)
+24 00 | Bow Mastery (Passive)
+25 00 | Sneak Attack
+26 00 | Disabling Shot (Passive)
+27 00 | Efficiency
+28 00 | Multi-Shot
+29 00 | Chain Dance
+2A 00 | Scapegoat
+2B 00 | Trick Step
+2C 00 | Swap Step
+2D 00 | Blind Arrow
+2E 00 | Sleep Arrow
+2F 00 | Paralysis Arrow
+30 00 | Flank Shot
+31 00 | Drop Shot
+32 00 | Sagittarius Shot
+33 00 | Hazy Arrow
+34 00 | Resuscitate
+35 00 | Owl-Eye
+36 00 | Risk Perception (Passive)
+37 00 | Stalker
+38 00 | Natural Instinct (Passive)
+39 00 | Illusion Step
+3A 00 | Summer Rain
+3B 00 | DUMMY
+3C 00 | DUMMY
+3D 00 | DUMMY
+3E 00 | HP Up (Passive)
+3F 00 | TP Up (Passive)
+40 00 | Phys DEF Up (Passive)
+41 00 | Elem DEF Up (Passive)
+42 00 | Pre-Provoke (Passive)
+43 00 | Shield Mastery (Passive)
+44 00 | Aegis (Passive)
+45 00 | Parry (Passive)
+46 00 | Fortify
+47 00 | Provoke
+48 00 | Line Heal
+49 00 | Line Cure
+4A 00 | Armor of Light
+4B 00 | Keep Guard
+4C 00 | Heal Guard
+4D 00 | Front Guard
+4E 00 | Rear Guard
+4F 00 | Fire Wall
+50 00 | Ice Wall
+51 00 | Volt Wall
+52 00 | Sentinel Guard
+53 00 | Shield Smite
+54 00 | Shield Rush
+55 00 | Flee
+56 00 | Mine (Passive)
+57 00 | Shield Protect
+58 00 | Perfect Defense
+59 00 | DUMMY
+5A 00 | DUMMY
+5B 00 | DUMMY
+5C 00 | HP Up (Passive)
+5D 00 | TP Up (Passive)
+5E 00 | Phys ATK Up (Passive)
+5F 00 | Curb ATK Up (Passive)
+60 00 | Sword Mastery (Passive)
+61 00 | Whip Mastery (Passive)
+62 00 | Perseverance (Passive)
+63 00 | Snake Eyes
+64 00 | Bind Heart
+65 00 | Temptation
+66 00 | Gag
+67 00 | Cuffs
+68 00 | Shackles
+69 00 | Ecstasy
+6A 00 | Viper
+6B 00 | Crimson Rouge
+6C 00 | Hypno Bite
+6D 00 | Nerve Bite
+6E 00 | Mirage Bite
+6F 00 | Soul Liberator
+70 00 | Drain Bite
+71 00 | Scorpion
+72 00 | Attack Bait
+73 00 | Elemental Bait
+74 00 | Chop (Passive)
+75 00 | Trance
+76 00 | Rose Prison
+77 00 | DUMMY
+78 00 | DUMMY
+79 00 | DUMMY
+7A 00 | HP Up (Passive)
+7B 00 | TP Up (Passive)
+7C 00 | Phys ATK Up (Passive)
+7D 00 | Elem DEF Up (Passive)
+7E 00 | Final Gift (Passive)
+7F 00 | Heal Mastery (Passive)
+80 00 | Staff Mastery (Passive)
+81 00 | Scavenge (Passive)
+82 00 | Cure
+83 00 | Salve
+84 00 | Healing
+85 00 | Line Heal
+86 00 | Salve 2
+87 00 | Chase Heal
+88 00 | Delayed Heal
+89 00 | Revive
+8A 00 | Unbind
+8B 00 | Refresh
+8C 00 | High Regen
+8D 00 | Heavy Strike
+8E 00 | Vital Hit
+8F 00 | Medical Rod
+90 00 | Overheal
+91 00 | Safe Passage
+92 00 | Take (Passive)
+93 00 | Steady Hands
+94 00 | Medical Miracle
+95 00 | DUMMY
+96 00 | DUMMY
+97 00 | DUMMY
+98 00 | HP Up (Passive)
+99 00 | TP Up (Passive)
+9A 00 | Elem ATK Up (Passive)
+9B 00 | Elem DEF Up (Passive)
+9C 00 | Formula Mastery (Passive)
+9D 00 | Palm Mastery (Passive)
+9E 00 | Additional Palm (Passive)
+9F 00 | Splash Palm (Passive)
+A0 00 | Fire Palm
+A1 00 | Ice Palm
+A2 00 | Volt Palm
+A3 00 | Compression
+A4 00 | Fire Formula
+A5 00 | Flame Formula
+A6 00 | Inferno Formula
+A7 00 | Ice Formula
+A8 00 | Freeze Formula
+A9 00 | Cocytus Formula
+AA 00 | Volt Formula
+AB 00 | Spark Formula
+AC 00 | Thor Formula
+AD 00 | Nuclear Formula
+AE 00 | Riot Formula
+AF 00 | Sight Formula
+B0 00 | Chop (Passive)
+B1 00 | Analysis
+B2 00 | Eschaton
+B3 00 | DUMMY
+B4 00 | DUMMY
+B5 00 | DUMMY
+B6 00 | HP Up (Passive)
+B7 00 | TP Up (Passive)
+B8 00 | Speed Up (Passive)
+B9 00 | Holy Gift (Passive)
+BA 00 | Healing Rhythm (Passive)
+BB 00 | Song Mastery (Passive)
+BC 00 | Energy Ensemble
+BD 00 | Life Ensemble
+BE 00 | Skanda Ensemble
+BF 00 | Reverb
+C0 00 | Warrior Song
+C1 00 | Shelter Song
+C2 00 | Insight Melody
+C3 00 | Lightfoot Melody
+C4 00 | Health Requiem
+C5 00 | Fire Prelude
+C6 00 | Ice Prelude
+C7 00 | Volt Prelude
+C8 00 | Barbaric March
+C9 00 | Flame Fantasia
+CA 00 | Frost Fantasia
+CB 00 | Shock Fantasia
+CC 00 | Jovial March
+CD 00 | Alluring Ballad
+CE 00 | Take (Passive)
+CF 00 | War Song
+D0 00 | Crusade
+D1 00 | DUMMY
+D2 00 | DUMMY
+D3 00 | DUMMY
+D4 00 | HP Up (Passive)
+D5 00 | TP Up (Passive)
+D6 00 | Phys ATK Up (Passive)
+D7 00 | Katana Mastery (Passive)
+D8 00 | Upper Stance (Passive)
+D9 00 | Clear Stance (Passive)
+DA 00 | Drawing Stance (Passive)
+DB 00 | Pre-Initiative (Passive)
+DC 00 | Upward Slash
+DD 00 | Charging Thrust
+DE 00 | Sheath Strike
+DF 00 | Horse Slash
+E0 00 | Flame Grater
+E1 00 | Swallow Strike
+E2 00 | Arm Strike
+E3 00 | Lightning Stab
+E4 00 | Moon Shadow
+E5 00 | Beheading Cut
+E6 00 | Frigid Slash
+E7 00 | Ground Strike
+E8 00 | Peerless Combo
+E9 00 | Peerless Stance
+EA 00 | Perfect Chaser
+EB 00 | Post-Initiative
+EC 00 | Mine (Passive)
+ED 00 | Immovable
+EE 00 | Issen
+EF 00 | DUMMY
+F0 00 | DUMMY
+F1 00 | DUMMY
+F2 00 | HP Up (Passive)
+F3 00 | TP Up (Passive)
+F4 00 | Curb ATK Up (Passive)
+F5 00 | Curb DEF Up (Passive)
+F6 00 | Curse Mastery (Passive)
+F7 00 | Chained Benefit
+F8 00 | Sapping Curse
+F9 00 | Frailty Curse
+FA 00 | Weakening Curse
+FB 00 | Cranial Curse
+FC 00 | Abdomen Curse
+FD 00 | Immobile Curse
+FE 00 | Venom Curse
+FF 00 | Blinding Curse
+00 01 | Torpor Curse
+01 01 | Madness Curse
+02 01 | Corrupt Curse
+03 01 | Evil Eye
+04 01 | Suicide Word
+05 01 | Conflict Word
+06 01 | Shielding Word
+07 01 | Life Trade
+08 01 | Sacrifice
+09 01 | Reincarnate
+0A 01 | Chop (Passive)
+0B 01 | Creeping Curse
+0C 01 | Black Mist
+0D 01 | DUMMY
+0E 01 | DUMMY
+0F 01 | DUMMY
+10 01 | HP Up (Passive)
+11 01 | TP Up (Passive)
+12 01 | Phys ATK Up (Passive)
+13 01 | Phys DEF Up (Passive)
+14 01 | Spear Mastery (Passive)
+15 01 | Bloodlust (Passive)
+16 01 | Turning Tide (Passive)
+17 01 | Battle Instinct (Passive)
+18 01 | Draining Thrust
+19 01 | Draining Burst
+1A 01 | Legion Thrust
+1B 01 | Legion Burst
+1C 01 | Delayed Charge
+1D 01 | Cross Charge
+1E 01 | Long Thrust
+1F 01 | Head Pierce
+20 01 | Spear Assist
+21 01 | Limitless
+22 01 | Stigmata
+23 01 | Black Sabbath
+24 01 | Blood Fortune
+25 01 | Mine (Passive)
+26 01 | Allied Bonds (Passive)
+27 01 | Spirit Shield
+28 01 | Bloody Offense
+29 01 | Hero Battle
+2A 01 | Gae Bolg
+2B 01 | DUMMY
+2C 01 | DUMMY
+2D 01 | DUMMY
+2E 01 | HP Up (Passive)
+2F 01 | TP Up (Passive)
+30 01 | Phys ATK Up (Passive)
+31 01 | Gun Mastery (Passive)
+32 01 | Cover Fire (Passive)
+33 01 | Double Action (Passive)
+34 01 | Preemptive Shell (Passive)
+35 01 | Penetrator (Passive)
+36 01 | Shell Shock
+37 01 | Act Quick
+38 01 | Point Blank
+39 01 | Medic Bullet
+3A 01 | Head Snipe
+3B 01 | Arm Snipe
+3C 01 | Leg Snipe
+3D 01 | Fire Rounds
+3E 01 | Charged Fire
+3F 01 | Ice Rounds
+40 01 | Charged Ice
+41 01 | Volt Rounds
+42 01 | Charged Volt
+43 01 | Ricochet
+44 01 | Charged Shot
+45 01 | Burst Shot
+46 01 | Take (Passive)
+47 01 | Action Boost
+48 01 | Supreme Bolt
+49 01 | DUMMY
+4A 01 | DUMMY
+4B 01 | DUMMY
+4C 01 | HP Up (Passive)
+4D 01 | TP Up (Passive)
+4E 01 | Phys ATK Up (Passive)
+4F 01 | Curb DEF Up (Passive)
+50 01 | War Edge Mastery (Passive)
+51 01 | War Lore Mastery (Passive)
+52 01 | Vampire (Passive)
+53 01 | War Heal
+54 01 | War Heal Line
+55 01 | War Heal All
+56 01 | War Response
+57 01 | Artery
+58 01 | War Revive
+59 01 | Displace
+5A 01 | Warmight
+5B 01 | Rockskin
+5C 01 | Random Disease
+5D 01 | Barrier
+5E 01 | Ailing Slash
+5F 01 | Legcut
+60 01 | Armcut
+61 01 | Headcut
+62 01 | Strength Slash
+63 01 | Guard Slash
+64 01 | Chop (Passive)
+65 01 | War Edge Power
+66 01 | Fairy Robe
+67 01 | DUMMY
+68 01 | DUMMY
+69 01 | DUMMY
+6A 01 | HP Up (Passive)
+6B 01 | TP Up (Passive)
+6C 01 | Phys ATK Up (Passive)
+6D 01 | Phys DEF Up (Passive)
+6E 01 | Deadly Resolve (Passive)
+6F 01 | Auto Lick (Passive)
+70 01 | Loyalty Mastery (Passive)
+71 01 | Claw Mastery (Passive)
+72 01 | Preemptive Roar (Passive)
+73 01 | Lick Wounds
+74 01 | Self Defense
+75 01 | Bull Charge
+76 01 | Endurance
+77 01 | Protect
+78 01 | Hit-Taker
+79 01 | Protection Vow
+7A 01 | Beast Roar
+7B 01 | Berserk
+7C 01 | Beast Dance
+7D 01 | Savage Rush
+7E 01 | Tiger Blow
+7F 01 | Wolf Fang
+80 01 | Comet Drop
+81 01 | Wildblow
+82 01 | Natural Instinct (Passive)
+83 01 | Desperation
+84 01 | True Endurance
+85 01 | DUMMY
+86 01 | DUMMY
+87 01 | DUMMY
+88 01 | HP Up (Passive)
+89 01 | TP Up (Passive)
+8A 01 | Curb DEF Up (Passive)
+8B 01 | Royal Veil (Passive)
+8C 01 | Triumphant Cry (Passive)
+8D 01 | Monarch March (Passive)
+8E 01 | Order Mastery (Passive)
+8F 01 | Morale Boost (Passive)
+90 01 | Attack Order
+91 01 | Guard Order
+92 01 | Prevent Order
+93 01 | Protect Order
+94 01 | Dauntless Order
+95 01 | Holy Crown
+96 01 | Fire Circle
+97 01 | Freeze Circle
+98 01 | Shock Circle
+99 01 | Link Order
+9A 01 | Link Order II
+9B 01 | Ad Nihilo
+9C 01 | Negotiation
+9D 01 | White Noble
+9E 01 | Clearance
+9F 01 | Cheer
+A0 01 | Take (Passive)
+A1 01 | Victory Vow
+A2 01 | Proof of Nobility
+A3 01 | DUMMY
+A4 01 | DUMMY
+A5 01 | DUMMY
+A6 01 | HP Up (Passive)
+A7 01 | TP Up (Passive)
+A8 01 | Phys ATK Up (Passive)
+A9 01 | Elem ATK Up (Passive)
+AA 01 | Blade Mastery (Passive)
+AB 01 | Force Mastery (Passive)
+AC 01 | Limit Break (Passive)
+AD 01 | Force Energy (Passive)
+AE 01 | Weapon Free (Passive)
+AF 01 | Vital Shut
+B0 01 | Mind Shut
+B1 01 | Absorb
+B2 01 | Force Charge
+B3 01 | Sonic Raid
+B4 01 | Flame Sabre
+B5 01 | Freeze Sabre
+B6 01 | Shock Sabre
+B7 01 | Gale Rush
+B8 01 | Overkiller
+B9 01 | Delayed Chase
+BA 01 | Full Slash
+BB 01 | Resonance
+BC 01 | Force Reset
+BD 01 | Force Shield
+BE 01 | Fire Wave
+BF 01 | Ice Wave
+C0 01 | Thunder Wave
+C1 01 | Blade Recoil
+C2 01 | Meteor Smash
+C3 01 | Power Cell (Passive)
+C4 01 | Extend
+C5 01 | Self-Regenerate (Passive)
+C6 01 | Accelerate
+C7 01 | Mine (Passive)
+C8 01 | Transform
+C9 01 | Ignition Ray
+CA 01 | Akashic Nova
+CB 01 | DUMMY
+CC 01 | DUMMY
+CD 01 | DUMMY
+9D 02 | Hard Shell
+9E 02 | Desperate Needle
+9F 02 | Ensnaring Web
+A0 02 | Poison Powder
+A1 02 | Scorching Laser
+A2 02 | Solar Flame
+A3 02 | Rolling
+A4 02 | Beaked Rush
+A5 02 | Dive Kick
+A6 02 | Sleep Powder
+A7 02 | Snail March
+A8 02 | Charge
+A9 02 | Freezing Snare
+AA 02 | Baffling Step
+AB 02 | Knockdown
+AC 02 | Paralyze Fang
+AD 02 | Rending Bite
+AE 02 | Menacing Glare
+AF 02 | Cruel Fangs
+B0 02 | Heaven's Bolt
+B1 02 | Tail Whip
+B2 02 | Toxic Secretion
+B3 02 | Drain Dive
+B4 02 | Stunning Spores
+B5 02 | Strike Up
+B6 02 | Sweep Strike
+B7 02 | Heavy Stomp
+B8 02 | Binding Vines
+B9 02 | Gouging Thorn
+BA 02 | Bullrush
+BB 02 | Flame Breath
+BC 02 | Insulation Gel
+BD 02 | Strike Down
+BE 02 | Confusing Dust
+BF 02 | Slashing Claws
+C0 02 | Corrosive Aura
+C1 02 | Blast Horn
+C2 02 | Powerful Rage
+C3 02 | Poison Pollen
+C4 02 | Self-Destruct
+C5 02 | Hammerhead
+C6 02 | Revenge Needle
+C7 02 | Double Needle
+C8 02 | Fire God's Fury
+C9 02 | Fearsome Roar
+CA 02 | Spin Drive
+CB 02 | Harsh Cry
+CC 02 | Dust Tail
+CD 02 | Clash
+CE 02 | Curse Fang
+CF 02 | Death Stare
+D0 02 | Lava Boulder
+D1 02 | Waterproof Fire
+D2 02 | Snowball
+D3 02 | Confusing Blitz
+D4 02 | Chase Down
+D5 02 | Stomp
+D6 02 | Freezing Breath
+D7 02 | Harsh Buzz
+D8 02 | Trample
+D9 02 | Shielding Shell
+DA 02 | Destructive Fang
+DB 02 | Ice Fin
+DC 02 | White Wings
+DD 02 | Stone Gaze
+DE 02 | Shock Assault
+DF 02 | Hailstorm
+E0 02 | Assault Howl
+E1 02 | Frost Fang
+E2 02 | Venom Fang
+E3 02 | Eye of Madness
+E4 02 | Onrush
+E5 02 | Elemental Gel
+E6 02 | Ice King's Howl	
+E7 02 | Sealing Bolt
+E8 02 | Poison Sting
+E9 02 | Wind Guard
+EA 02 | Crushing Jaw
+EB 02 | Black Wings
+EC 02 | Binding String
+ED 02 | Confusing Dust
+EE 02 | Slice and Dice
+EF 02 | Air Slash
+F0 02 | Terror Sting
+F1 02 | Discharge
+F2 02 | Cannibalize
+F3 02 | Night Call
+F4 02 | Crazed Fang
+F5 02 | Brutal Ray
+F6 02 | Do or Die
+F7 02 | Horn Smash
+F8 02 | Jump
+F9 02 | Hex
+FA 02 | Gale Wings
+FB 02 | Tearing Claws
+FC 02 | Reaping Claws
+FD 02 | Thunderous Fury
+FE 02 | Crazed Glare
+FF 02 | Ripping Claws
+00 03 | Last Cry
+01 03 | Headbutt
+02 03 | Cripple
+03 03 | Frail Aura
+04 03 | Power Gel
+05 03 | Revenge Claw
+06 03 | Silver Bullet
+07 03 | Nightmare
+08 03 | Night Run
+09 03 | King of Kings
+0A 03 | Revenge Blade
+0B 03 | Glinting Blade
+0C 03 | Death's Edge
+0D 03 | Dark Blade
+0E 03 | EMP
+0F 03 | Stance
+10 03 | Slaughter Blade
+11 03 | Greedy Bite
+12 03 | Electric Impact
+13 03 | Ancient Guard
+14 03 | Affection Collar
+15 03 | Curse Dance
+16 03 | Rejection Needle
+17 03 | Vile Fangs
+18 03 | Scorching Light
+19 03 | Madness Dust
+1A 03 | Evil Cry
+1B 03 | Tripple Death
+1C 03 | Bloody Blade
+1D 03 | Sleep Pollen
+1E 03 | Dancing Petals
+1F 03 | Terror Pain
+20 03 | Absorb Vine
+21 03 | Warhammer
+22 03 | Reversal Beat
+23 03 | Not Used
+24 03 | Playful Bite
+25 03 | Frolic
+26 03 | Pout
+27 03 | Blood Drain
+28 03 | Echolocation
+29 03 | Toxic Breath
+2A 03 | Explosives
+2B 03 | Petrifying Stare
+2C 03 | Jolting Blow
+2D 03 | Horror Banquet
+2E 03 | Holy Shock
+2F 03 | Command Boars
+30 03 | Swing
+31 03 | Appraise
+32 03 | Infectious Club
+33 03 | Destructive Claw
+34 03 | Holy Fire
+35 03 | Head Splitter
+36 03 | Snaring String
+37 03 | Poison Fang
+38 03 | Confuse Vine
+39 03 | Scythe Slash
+3A 03 | Execution Scythe
+3B 03 | None
+3C 03 | None
+3D 03 | None
+3E 03 | None
+3F 03 | None
+40 03 | None
+41 03 | None
+42 03 | None
+43 03 | None
+44 03 | None
+45 03 | None
+46 03 | None
+47 03 | None
+48 03 | None
+49 03 | None
+4A 03 | None
+4B 03 | None
+4C 03 | None
+4D 03 | None
+4E 03 | None
+4F 03 | None
+50 03 | None
+51 03 | None
+52 03 | None
+53 03 | None
+54 03 | None
+55 03 | None
+56 03 | None
+57 03 | None
+58 03 | None
+59 03 | None
+5A 03 | None
+5B 03 | None
+5C 03 | None
+5D 03 | None
+5E 03 | None
+5F 03 | None
+60 03 | None
+61 03 | None
+62 03 | None
+63 03 | Snake Pile
+64 03 | Great Blaze
+65 03 | Double Strike
+66 03 | Menacing Roar
+67 03 | Madness Roar
+68 03 | Dispersed Cruelty
+69 03 | Inferno Strike
+6A 03 | Stun
+6B 03 | Terror's Embrace
+6C 03 | Kingly Fire
+6D 03 | Explosion
+6E 03 | Blind Laughter
+6F 03 | Loose Thread
+70 03 | Pandemonium
+71 03 | Blossom Sketch
+72 03 | Corpse Ash
+73 03 | Spellsword
+74 03 | Nature's Will
+75 03 | Blind Laughter
+76 03 | Loose Thread
+77 03 | Fire Rounds
+78 03 | Ice Rounds
+79 03 | Volt Rounds
+7A 03 | Rapid Fire
+7B 03 | Accelerate
+7C 03 | Mystic Shot
+7D 03 | Fire Rounds
+7E 03 | Ice Rounds
+7F 03 | Volt Rounds
+80 03 | Cry Soul
+81 03 | Lullaby
+82 03 | Piercing Shell
+83 03 | Ice Shave
+84 03 | Six Sins
+85 03 | Call Ally
+86 03 | Tentacle Creep
+87 03 | Shrill Cry
+88 03 | Chaos Scream
+89 03 | Claws of Despair
+8A 03 | Storm Feather
+8B 03 | Feast
+8C 03 | Putrid Breath
+8D 03 | Violent Cry
+8E 03 | Berserk Cry
+8F 03 | Reckless Barrier
+90 03 | Tusk Strike
+91 03 | Brandish
+92 03 | Eradicate
+93 03 | King's Rush
+94 03 | VOID0
+95 03 | VOID1
+96 03 | VOID2
+97 03 | VOID3
+98 03 | LRDA
+99 03 | AACV
+9A 03 | Standby
+9B 03 | MACV
+9C 03 | REPAIR
+9D 03 | Dazzling Sunlight
+9E 03 | Hail and Rain
+9F 03 | Crashing Thunder
+A0 03 | Birth of Anguish
+A1 03 | Mountain Stream
+A2 03 | Solitude
+A3 03 | Message Standby
+A4 03 | Seek
+A5 03 | Dance
+A6 03 | Call Ally
+A7 03 | Call Ally
+A8 03 | Hellish Wail
+A9 03 | Colossal Meteor
+AA 03 | Grinding Mace
+AB 03 | Binding Spike
+AC 03 | Hundred Strikes
+AD 03 | Avarice Claw
+AE 03 | Crushing Tail
+AF 03 | Hellfire Breath
+B0 03 | Heal Cry
+B1 03 | Call Ally
+B2 03 | Null thy Strength
+B3 03 | Pity the Weak
+B4 03 | Behold my Power
+B5 03 | Dance with Lunacy
+B6 03 | Strongman's Glory
+B7 03 | Recluse's Glory
+B8 03 | Value of Solitude
+B9 03 | My Wrath
+BA 03 | My Sorrow
+BB 03 | My Mercy
+BC 03 | Release my Power
+BD 03 | Liberating Light
+BE 03 | Eternal Exodus
+BF 03 | Howling Winds
+C0 03 | Noble Rest
+C1 03 | Unhand Me
+C2 03 | My Realm
+C3 03 | Twilight's Gleam
+C4 03 | Sunlight's Dawn
+C5 03 | Call Ally
+C6 03 | Stone Gleam
+C7 03 | Doom Breath
+C8 03 | Dark Moon
+C9 03 | Impairing Claws
+CA 03 | Pound
+CB 03 | Call Ally
+CC 03 | Poison Swamp
+CD 03 | Silk Spread
+CE 03 | Silk Spit
+CF 03 | Venomous Bite
+D0 03 | Stinger
+D1 03 | Avalance
+D2 03 | Soul Freeze
+D3 03 | Pile Bunker
+D4 03 | Buster Arm
+D5 03 | Crystal Scar
+D6 03 | Call Ally
+D7 03 | Electric Arrow
+D8 03 | Plasma Shot
+D9 03 | Volt Shot
+DA 03 | Lightspeed
+DB 03 | Lightspeed
+DC 03 | Spindrift
+DD 03 | Electric Arrow
+DE 03 | Rising Flame
+DF 03 | Overpower
+E0 03 | Condemn Blade
+E1 03 | Nihil Blade
+E2 03 | Soundless Blade
+E3 03 | Flame Formation
+E4 03 | Release Flame
+E5 03 | Flash
+E6 03 | Power of Stone
+E7 03 | Blind Laughter
+E8 03 | Blind Laughter
+E9 03 | None
+EA 03 | Pandemonium
+EB 03 | Blossom Sketch
+EC 03 | None
+ED 03 | None
+EE 03 | Seek
+EF 03 | Crystal Scar
+F0 03 | None
+F1 03 | Power of Stone
+F2 03 | Power of Stone
+F3 03 | Power of Stone
+F4 03 | Release my Power
+F5 03 | Release my Power
+F6 03 | Unhand me
+F7 03 | None
+F8 03 | None
+F9 03 | None
+FA 03 | None
+FB 03 | None
+FC 03 | None
+FD 03 | None
+FE 03 | None
+FF 03 | None
+00 04 | None
+01 04 | None
+02 04 | None
+03 04 | None
+04 04 | None
+05 04 | None
+06 04 | None
+07 04 | None
+08 04 | None
+09 04 | None
+0A 04 | None
+0B 04 | None
+0C 04 | None
+0D 04 | None
+0E 04 | None
+0F 04 | None
+10 04 | None
+11 04 | None
+12 04 | None
+13 04 | None
+14 04 | None
+15 04 | None
+16 04 | None (Passive)
+17 04 | Stomach Acid (Passive)
+18 04 | Bracing Liquid (Passive)
+19 04 | Freezing Fluid (Passive)
+1A 04 | Survival Instinct (Passive)
+1B 04 | Paralyzing Fluid (Passive)
+1C 04 | Chase Laser (Passive)
+1D 04 | Hell Thread (Passive)
+1E 04 | Special Standby (Passive)
+1F 04 | Poison Sap (Passive)
+20 04 | Infernal Rounds (Passive)
+21 04 | Survive (Passive)
+22 04 | Chase Laser
+23 04 | Thousand Eyes (Passive)
+24 04 | Forbidden Light (Passive)
+25 04 | Cell Membrane (Passive)
+26 04 | Frost Bomb (Passive)
+27 04 | Cell Membrane
+28 04 | None (Passive)
+29 04 | None (Passive)
+2A 04 | None (Passive)
+2B 04 | None
+2C 04 | Stomach Acid
+2D 04 | Bracing Liquid
+2E 04 | Freezing Fluid
+2F 04 | Paralyzing Fluid
+30 04 | Poison Sap
+31 04 | Hell Thread
+32 04 | Revenge Needle
+33 04 | Rejection Needle
+34 04 | Do or Die
+35 04 | Cannibalize
+36 04 | Cannibalize
+37 04 | Glinting Blade
+38 04 | Slaughter Blade
+39 04 | Warhammer
+3A 04 | Reversal Beat
+3B 04 | Survival Instinct
+3C 04 | Ice Breath
+3D 04 | Mirror Shield
+3E 04 | Crushing Arm
+3F 04 | Cold Regen
+40 04 | Wail
+41 04 | Triple Strike
+42 04 | Call Ally
+43 04 | Resonant Ice
+44 04 | Volt Torrent
+45 04 | Ancient Curse
+46 04 | Judgement
+47 04 | Corrupting Howl
+48 04 | Binding Dance
+49 04 | Call Ally
+4A 04 | Resonant Thunder
+4B 04 | Fire Torrent
+4C 04 | Resonant Roar
+4D 04 | Dragon Strike
+4E 04 | Draconic Fury
+4F 04 | Dragon Claw
+50 04 | Wyrm Quake
+51 04 | Call Ally
+52 04 | Resonant Fire
+53 04 | Wing Talon
+54 04 | Tail Strike
+55 04 | Whirlwind
+56 04 | Burning Ray
+57 04 | Sharp Roar
+58 04 | Flame Formation
+59 04 | Mirror Shield
+5A 04 | Calamity Fangs
+5B 04 | AACV
+5C 04 | MACV
+5D 04 | My Realm
+5E 04 | Poison Swamp
+5F 04 | Release Flame
+60 04 | Regen
+61 04 | Force Wall
+62 04 | Power Wall
+63 04 | Rock Hammer
+64 04 | Triple Hammer
+65 04 | Infernal Rounds
+66 04 | Blessed Light
+67 04 | Plague Club
+68 04 | Crush
+69 04 | Reflect Guard
+6A 04 | Berserk Vines
+6B 04 | Ensnaring Vines
+6C 04 | White Plasma
+6D 04 | Steel Stinger
+6E 04 | Freeze
+6F 04 | Red Plasma
+70 04 | Healing Dance
+71 04 | Crazed Dance
+72 04 | Command Boars
+73 04 | Forbidden Light
+74 04 | Thousand Eyes
+75 04 | Reflect Guard
+76 04 | Calamity Eyes
+77 04 | Core Charge
+78 04 | None
+79 04 | Pitfall Snare
+7A 04 | Pitfall Escape
+7B 04 | Root Cyclone
+7C 04 | Earth Slash
+7D 04 | Demon's Lance
+7E 04 | Poison Dust
+7F 04 | Calmaity Eyes
+80 04 | Ruinous Curse
+81 04 | Pandemic
+82 04 | Isolate
+83 04 | Armageddon
+84 04 | End Times
+85 04 | Core Charge
+86 04 | Segment
+87 04 | Giga Flame
+88 04 | Freezing Nova
+89 04 | Thunder Rain
+8A 04 | Awaken
+8B 04 | Fang Flurry
+8C 04 | Glacial Fin
+8D 04 | Torment Barb
+8E 04 | Execution Barb
+8F 04 | Earth Slash
+90 04 | Demon's Lance
+91 04 | Giga Flame
+92 04 | Freezing Nova
+93 04 | Thunder Rain
+94 04 | Paralyze All (D)
+95 04 | Fear All (D)
+96 04 | Sleep All (D)
+97 04 | Confuse All (D)
+98 04 | Stun All (D)
+99 04 | Head Bind All (D)
+9A 04 | Arm Bind All (D)
+9B 04 | Leg Bind All (D)
+9C 04 | Kill All (D)
+9D 04 | Petrify All (D)
+9E 04 | None
+9F 04 | None
+A0 04 | None
+A1 04 | None
+A2 04 | None
+A3 04 | Power Needle
+A4 04 | Tentacle Rage
+A5 04 | Shock Swing
+A6 04 | Venom Claw
+A7 04 | Chaos Slash
+A8 04 | Toxic Gas
+A9 04 | Power Needle
+AA 04 | Toxic Gas
+AB 04 | Horrific Roar
+AC 04 | Cold Fangs
+AD 04 | Silver Fang
+AE 04 | Binding Howl
+AF 04 | Silent Stare
+B0 04 | Cross Counter
+B1 04 | Cross Counter
+B2 04 | Horn Rush
+B3 04 | Combo Smash
+B4 04 | Hurricane Punch
+B5 04 | Cure
+B6 04 | Holy Veil
+B7 04 | Crunch
+B8 04 | Queen's Verdict
+B9 04 | Duster
+BA 04 | Ruler's Eye
+BB 04 | Attack Unit
+BC 04 | Defense Unit
+BD 04 | Ice Breath
+BE 04 | Flood
+BF 04 | Tackle
+C0 04 | Coiling Tail
+C1 04 | Freeze Aura
+C2 04 | Aqua Veil
+C3 04 | Thunderwing
+C4 04 | Pinion Spear
+C5 04 | Deathbringer
+C6 04 | Chaosbringer
+C7 04 | Grip
+C8 04 | Wind Breath
+C9 04 | Flame Sigh
+CA 04 | Frost Smile
+CB 04 | Lightning
+CC 04 | Tendil Thrash
+CD 04 | Vampiric Kiss
+CE 04 | Ancient Pollen
+CF 04 | Demon's Croon
+D0 04 | Dark Claw
+D1 04 | Poison Tail
+D2 04 | Petra Voice
+D3 04 | Glutton
+D4 04 | Snaring Tentacle
+D5 04 | Greed
+D6 04 | Dread Stare
+D7 04 | Chi Burst
+D8 04 | Crimson Cyclone
+D9 04 | Phoenix Strike
+DA 04 | Suzaku Stance
+DB 04 | Heavy Jump
+DC 04 | Hydro Jump
+DD 04 | Lick Around
+DE 04 | Hug
+DF 04 | Get Excited (Passive)
+E0 04 | Calm Down (Passive)
+E1 04 | Fixed Stare
+E2 04 | Despise Solitude
+E3 04 | Darkness Shroud
+E4 04 | Realm of Death
+E5 04 | Shed thy Tears
+E6 04 | Know thy Reason
+E7 04 | Selfless Strenght
+E8 04 | Call Ally
+E9 04 | Death's Glimmer
+EA 04 | Wave of Ruin (Passive)
+EB 04 | Get Excited
+EC 04 | Calm Down
+ED 04 | Darkness Shroud
+EE 04 | Realm of Death
+EF 04 | Wave of Ruin
+F0 04 | Spider Lily
+F1 04 | Light Speed
+F2 04 | None
+F3 04 | None
+00 00 | (Empty)

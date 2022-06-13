@@ -1,3 +1,6 @@
 __pycache__/
 backups/
 env/
+# dist/
+build/
+*.spec
