@@ -20,7 +20,10 @@ async function setGrimoireDropdown() {
     opt.value = idx;
     opt.innerHTML = name;
     grimoireDropdown.appendChild(opt);
-  })
+  });
+
+  // Set the value correctly
+  grimoireDropdown.value = await eel.get_chosen_grimoire_idx()();
 }
 
 // Set the elements in the skill selection dropdown
@@ -82,6 +85,16 @@ async function grimoireSelectCallback() {
 async function skillSelectCallback() {
   const newSkill = document.getElementById("skill-name").value;
   await eel.update_grimoire_skill(newSkill)();
+
+  // Update the panel
+  setGrimoireDropdown();
+  renderChosenGrimoire();
+}
+
+
+async function skillLevelCallback() {
+  const newLevel = document.getElementById("skill-level").value;
+  await eel.update_grimoire_skill_level(newLevel);
 
   // Update the panel
   setGrimoireDropdown();

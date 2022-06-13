@@ -50,6 +50,12 @@ def get_chosen_grimoire():
 
 
 @eel.expose
+def get_chosen_grimoire_idx():
+    return SFM.chosen_idx
+
+
+
+@eel.expose
 def update_chosen_grimoire(new_idx):
     if not isinstance(new_idx, int):
         new_idx = int(new_idx)
@@ -60,6 +66,11 @@ def update_chosen_grimoire(new_idx):
 @eel.expose
 def update_grimoire_skill(skill_name):
     SFM.set_grimoire_skill(skill_name)
+
+
+@eel.expose
+def update_grimoire_skill_level(new_level):
+    SFM.set_grimoire_level(new_level)
 
 
 @eel.expose
