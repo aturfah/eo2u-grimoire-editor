@@ -8,6 +8,13 @@ async function setGrimoireDropdown() {
   let grimoireList = await eel.get_grimoire_dropdown_options()()
 
   const grimoireDropdown = document.getElementById("grimoire-dropdown");
+
+  // In case we're re-calling this, delete
+  while(grimoireDropdown.firstChild) {
+    grimoireDropdown.removeChild(grimoireDropdown.firstChild)
+  }
+
+  // Fill the children
   grimoireList.forEach((name, idx) => {
     let opt = document.createElement("option");
     opt.value = idx;
@@ -65,7 +72,9 @@ async function renderChosenGrimoire() {
 async function grimoireSelectCallback() {
   const newIdx = document.getElementById("grimoire-dropdown").value;
   await eel.update_chosen_grimoire(newIdx)();
-  await renderChosenGrimoire();
+  
+  // Update the panel
+  renderChosenGrimoire();
 }
 
 
@@ -73,8 +82,10 @@ async function grimoireSelectCallback() {
 async function skillSelectCallback() {
   const newSkill = document.getElementById("skill-name").value;
   await eel.update_grimoire_skill(newSkill)();
-  await setGrimoireDropdown();
-  await renderChosenGrimoire();
+
+  // Update the panel
+  setGrimoireDropdown();
+  renderChosenGrimoire();
 }
 
 
@@ -100,21 +111,18 @@ function loadMethod() {
   .catch(() => {
       console.error('Error');
   })
-  .then(() => {
+  .finally(() => {
       console.log('Finished');
-      // Change Event
-      const skillNameSelect = document.getElementById("skill-name")
-      console.log(skillNameSelect.value);
-      const bonusTypeSelect = document.getElementById("bonus-type");
-      console.log(bonusTypeSelect.value);
   });
 }
 
 // Reset grimoire to original stats
 async function resetMethod() {
-  await eel.reset_grimoire();
-  await setGrimoireDropdown();
-  await renderChosenGrimoire();
+  await eel.reset_grimoire()();
+
+  // Update the panel
+  setGrimoireDropdown();
+  renderChosenGrimoire();
 }
 
 // Assign functionality to buttons
