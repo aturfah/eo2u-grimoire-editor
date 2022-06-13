@@ -1,6 +1,6 @@
 from copy import deepcopy
 from datetime import datetime
-# import tkinter as tk
+import tkinter as tk
 from tkinter import filedialog
 from pprint import pprint
 
@@ -8,8 +8,9 @@ import modify_helpers as mh
 import parse_helpers as ph
 
 ## Hide tkinter window
-# root = tk.Tk()
-# root.withdraw()
+root = tk.Tk()
+root.wm_attributes('-topmost', 1)
+root.withdraw()
 
 
 def invert_dictionary(dict_in):

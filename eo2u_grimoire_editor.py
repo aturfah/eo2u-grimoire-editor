@@ -16,11 +16,16 @@ def get_date():
 def load_file():
     try:
         SFM.load_file()
+        if SFM.filename:
+            eel.prompt_alerts("Successfully loaded file: {}".format(SFM.filename))
+            return True
+        else:
+            return False
     except Exception as exc:
         print(exc)
         eel.prompt_alerts(str(exc))
+        return False
 
-    eel.prompt_alerts("Successfully loaded file: {}".format(SFM.filename))
 
 @eel.expose
 def save_file():

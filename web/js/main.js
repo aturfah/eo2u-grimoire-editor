@@ -123,7 +123,11 @@ async function bonusLevelCallback() {
 
 // Load the file from disk and prepare UI
 async function loadMethod() {
-  await eel.load_file();
+  const success = await eel.load_file()();
+
+  if (success === false) {
+    return;
+  }
 
   // Get everything prepared
   setGrimoireDropdown();
@@ -152,6 +156,10 @@ async function resetMethod() {
 // Save file
 async function saveMethod() {
   await eel.save_file()();
+
+  // Update the panel
+  setGrimoireDropdown();
+  renderChosenGrimoire();
 }
 
 
