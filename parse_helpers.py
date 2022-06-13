@@ -172,22 +172,22 @@ GRIMOIRE_BONUS_TYPE_MAP= {
     "7E02": "Bash Up",
     "7F02": "Fire Up",
     "8002": "Ice Up",
-    "8102": "Volt-Up",
-    "8202": "Ail inf up",
-    "8302": "Bind inf up",
+    "8102": "Volt Up",
+    "8202": "Ail Inf. up",
+    "8302": "Bind Inf. up",
     "8402": "Grimoire Chance Up",
-    "8502": "Rare enemy",
-    "8602": "Ail Rec Up",
-    "8702": "Bind rec Up",
-    "8802": "Drop amount up",
+    "8502": "Rare Enemy Up",
+    "8602": "Ail Rec. Up",
+    "8702": "Bind Rec. Up",
+    "8802": "Drop Amount Up",
     "8902": "Victory HP",
     "8A02": "Victory TP",
-    "8B02": "Auto-Heal", ## Legendary
-    "8C02": "Self-Heal Amp", ## Legendary
-    "8D02": "Force Up", ## Legendary
-    "8E02": "Grimoire Skill Level Up", ## Legendary
-    "8F02": "Turn TP Recover", ## Legendary
-    "9002": "TP Cost Recovery" ## Legendary
+    "8B02": "[L] Auto-Heal", ## Legendary
+    "8C02": "[L] Self-Heal Amp", ## Legendary
+    "8D02": "[L] Force Up", ## Legendary
+    "8E02": "[L] Grimoire Skill Level Up", ## Legendary
+    "8F02": "[L] Turn TP Recover", ## Legendary
+    "9002": "[L] TP Cost Recovery" ## Legendary
 }
 
 
