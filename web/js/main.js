@@ -131,8 +131,13 @@ async function loadMethod() {
   setGrimoireBonusDropdown();
   renderChosenGrimoire();
 
-  // Reset button is allowed
+  // Reset/Save buttons are allowed
   document.getElementById("reset-button").removeAttribute("disabled")
+  document.getElementById("save-button").removeAttribute("disabled")
+
+  // Add functionality after load
+  document.getElementById("save-button").addEventListener("click", ()=>{saveMethod()}, false);
+  document.getElementById("reset-button").addEventListener("click", ()=>{resetMethod()}, false);
 }
 
 // Reset grimoire to original stats
@@ -152,5 +157,3 @@ async function saveMethod() {
 
 // Assign functionality to buttons
 document.getElementById("load-button").addEventListener("click", ()=>{loadMethod()}, false);
-document.getElementById("save-button").addEventListener("click", ()=>{saveMethod()}, false);
-document.getElementById("reset-button").addEventListener("click", ()=>{resetMethod()}, false);

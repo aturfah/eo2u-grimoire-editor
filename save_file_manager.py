@@ -26,19 +26,37 @@ class SaveFileManager():
 
         self.chosen_idx = 0
 
+    def _load_file_helper(self, filename):
+        try:
+            self.orig_grimoire_data, self.orig_hex = ph.parse_save_file(filename)
+            self.grimoire_data = deepcopy(self.orig_grimoire_data)
+        except Exception as exc:
+            raise exc
+
     def load_file(self):
         self.filename = filedialog.askopenfilename(filetypes=[("SAV files", ".sav")])
         if not self.filename:
             return
 
         try:
-            self.orig_grimoire_data, self.orig_hex = ph.parse_save_file(self.filename)
-            self.grimoire_data = deepcopy(self.orig_grimoire_data)
+            self._load_file_helper(self.filename)
         except Exception as exc:
             raise exc
 
     def save_file(self):
-        return "doot"
+        destination = filedialog.asksaveasfilename(filetypes=[("SAV files", ".sav")])
+        if not destination:
+            return
+
+        try:
+            ph.write_save_file(destination, self.orig_hex, self.grimoire_data)
+        except Exception as exc:
+            raise exc
+
+        ## Reload from new file
+        self._load_file_helper(destination)
+
+        return destination
 
     def get_grimoire_labels(self):
         output = []
