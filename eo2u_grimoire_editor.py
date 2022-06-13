@@ -70,7 +70,12 @@ def update_grimoire_skill(skill_name):
 
 @eel.expose
 def update_grimoire_skill_level(new_level):
-    SFM.set_grimoire_level(new_level)
+    SFM.set_grimoire_skill_level(new_level)
+
+
+@eel.expose
+def update_grimoire_bonus_type(new_bonus):
+    SFM.set_grimoire_bonus_type(new_bonus)
 
 
 @eel.expose

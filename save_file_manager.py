@@ -11,6 +11,11 @@ import parse_helpers as ph
 # root = tk.Tk()
 # root.withdraw()
 
+
+def invert_dictionary(dict_in):
+    return {v: k for k, v in dict_in.items()}
+
+
 class SaveFileManager():
     def __init__(self) -> None:
         ## Save File Information
@@ -68,14 +73,31 @@ class SaveFileManager():
         self.grimoire_data[self.chosen_idx]["skill_id_bytes"] = skill_bytes
 
         if "".join(skill_bytes) == "0000":
-            self.set_grimoire_level(0)
+            self.set_grimoire_skill_level(0)
 
-    def set_grimoire_level(self, new_level):
+    def set_grimoire_skill_level(self, new_level):
         if not isinstance(new_level, int):
             new_level = int(new_level)
 
         self.grimoire_data[self.chosen_idx]["skill_level"] = new_level
         self.grimoire_data[self.chosen_idx]["skill_level_bytes"] = hex(new_level).removeprefix("0x").zfill(2)
+
+    def set_grimoire_bonus_type(self, new_bonus):
+        bonus_bytes = invert_dictionary(ph.GRIMOIRE_BONUS_TYPE_MAP)[new_bonus]
+        bonus_bytes_list = [bonus_bytes[:2], bonus_bytes[2:]]
+
+        self.grimoire_data[self.chosen_idx]["bonus_type"] = new_bonus
+        self.grimoire_data[self.chosen_idx]["bonus_type_bytes"] = bonus_bytes_list
+
+        if set(bonus_bytes) == {0}:
+            self.set_grimoire_bonus_level(0)
+
+    def set_grimoire_bonus_level(self, new_level):
+        if not isinstance(new_level, int):
+            new_level = int(new_level)
+
+        self.grimoire_data[self.chosen_idx]["bonus_level"] = new_level
+        self.grimoire_data[self.chosen_idx]["bonus_level_bytes"] = hex(new_level).removeprefix("0x").zfill(2)
 
     def get_chosen_grimoire(self):
         """Get the grimoire currently chosen."""
