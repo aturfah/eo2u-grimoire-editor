@@ -111,6 +111,16 @@ async function bonusTypeCallback() {
 }
 
 
+async function bonusLevelCallback() {
+  const newLevel = document.getElementById("bonus-level").value;
+  await eel.update_grimoire_bonus_level(newLevel);
+
+  // Update the panel
+  setGrimoireDropdown();
+  renderChosenGrimoire();
+}
+
+
 // Load the file from disk and prepare UI
 async function loadMethod() {
   await eel.load_file();

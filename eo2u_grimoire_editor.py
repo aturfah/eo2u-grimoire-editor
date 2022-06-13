@@ -79,6 +79,11 @@ def update_grimoire_bonus_type(new_bonus):
 
 
 @eel.expose
+def update_grimoire_bonus_level(new_bonus):
+    SFM.set_grimoire_bonus_level(new_bonus)
+
+
+@eel.expose
 def reset_grimoire():
     SFM.reset_chosen_grimoire()
 
