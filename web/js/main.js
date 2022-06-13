@@ -90,30 +90,17 @@ async function skillSelectCallback() {
 
 
 // Load the file from disk and prepare UI
-function loadMethod() {
-  // Review this: https://github.com/ChrisKnott/Eel#return-values
-  new Promise((resolve, reject) => {
-    console.log('Load File');
-    eel.load_file();
-    resolve();
-  })
-  .then(() => {
-    console.log("Prepare UI")
-    setGrimoireDropdown();
-    setSkillNameDropdown();
-    setGrimoireBonusDropdown();
-    renderChosenGrimoire();
-  })
-  .then(() => {
-      console.log("Step #4")
-      document.getElementById("reset-button").removeAttribute("disabled")
-  })
-  .catch(() => {
-      console.error('Error');
-  })
-  .finally(() => {
-      console.log('Finished');
-  });
+async function loadMethod() {
+  await eel.load_file();
+
+  // Get everything prepared
+  setGrimoireDropdown();
+  setSkillNameDropdown();
+  setGrimoireBonusDropdown();
+  renderChosenGrimoire();
+
+  // Reset button is allowed
+  document.getElementById("reset-button").removeAttribute("disabled")
 }
 
 // Reset grimoire to original stats
