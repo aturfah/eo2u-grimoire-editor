@@ -58,6 +58,11 @@ def update_chosen_grimoire(new_idx):
 
 
 @eel.expose
+def update_grimoire_skill(skill_name):
+    SFM.set_grimoire_skill(skill_name)
+
+
+@eel.expose
 def reset_grimoire():
     SFM.reset_chosen_grimoire()
 
