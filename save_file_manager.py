@@ -37,6 +37,9 @@ class SaveFileManager():
         except Exception as exc:
             raise exc
 
+    def save_file(self):
+        return "doot"
+
     def get_grimoire_labels(self):
         output = []
         widths = {key:0 for key in ["skill_name", "skill_level"]}

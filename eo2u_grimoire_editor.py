@@ -22,6 +22,15 @@ def load_file():
 
     eel.prompt_alerts("Successfully loaded file: {}".format(SFM.filename))
 
+@eel.expose
+def save_file():
+    try:
+        output_file = SFM.save_file()
+    except Exception as exc:
+        print(exc)
+        eel.prompt_alerts(str(exc))
+
+    eel.prompt_alerts("Successfully saved file: {}".format(output_file))
 
 @eel.expose
 def get_grimoire_dropdown_options():

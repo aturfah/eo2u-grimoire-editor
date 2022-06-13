@@ -144,7 +144,13 @@ async function resetMethod() {
   renderChosenGrimoire();
 }
 
+// Save file
+async function saveMethod() {
+  await eel.save_file()();
+}
+
+
 // Assign functionality to buttons
 document.getElementById("load-button").addEventListener("click", ()=>{loadMethod()}, false);
-document.getElementById("save-button").addEventListener("click", ()=>{eel.get_date()}, false);
+document.getElementById("save-button").addEventListener("click", ()=>{saveMethod()}, false);
 document.getElementById("reset-button").addEventListener("click", ()=>{resetMethod()}, false);
