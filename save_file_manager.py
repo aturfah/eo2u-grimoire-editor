@@ -71,6 +71,9 @@ class SaveFileManager():
             self.set_grimoire_level(0)
 
     def set_grimoire_level(self, new_level):
+        if not isinstance(new_level, int):
+            new_level = int(new_level)
+
         self.grimoire_data[self.chosen_idx]["skill_level"] = new_level
         self.grimoire_data[self.chosen_idx]["skill_level_bytes"] = hex(new_level).removeprefix("0x").zfill(2)
 
