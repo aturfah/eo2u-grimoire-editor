@@ -106,4 +106,4 @@ if __name__ == "__main__":
     SFM = SaveFileManager()
 
     eel.init('web')
-    eel.start('index.html')
+    eel.start('index.html', size=(800, 600))
