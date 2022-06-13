@@ -27,7 +27,7 @@ Launch the grimoire editor program and load the save file using the `Load File` 
 <img src="img/eo2u_grimoire_skills.jpg" alt="Change skill" width="80%"/>
 </div>
 
-You can select and edit other grimoires by selecting them from the `Chosen Grimoire` dropdown at the top of the page. If you would like to reset a grimoire to its original state, click the `Reset Grimoire` button. Note that this only changes the actively selected grimoire. Once you have made your edits, click `Save File` and choose where to write the updated save file. Upon loading the save file, you should see your edited grimoire.
+You can select and edit other grimoires by selecting them from the `Chosen Grimoire` dropdown at the top of the page. If you would like to reset a grimoire to its original state, click the `Reset Grimoire` button. Note that this only changes the actively selected grimoire. Once you have made your edits, click `Save File` and choose where to write the updated save file. Upon loading the save file, you should see your edited grimoire(s).
 
 <div align="center">
 <img src="img/eo2u_grim_4.PNG" alt="See Results" width="80%"/>
