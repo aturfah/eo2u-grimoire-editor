@@ -1,12 +1,11 @@
-/* Add a black background color to the top navigation */
-h1.title {
+h2.title {
   text-align: center;
 }
 
 div.button-div {
   margin: auto;
   width: 60%;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   padding: 10px;
 }
 
