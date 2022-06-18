@@ -307,6 +307,8 @@ Overkiller
 Full Slash
 Resonance
 Force Mastery
+Force Energy
+Force Reset
 Vital Shut
 Mind Shut
 Absorb
