@@ -53,7 +53,12 @@ GRIMOIRE_ORIGIN_MAP = {
 def parse_grimoire_origin(grimoire_data):
     """Bytes 1-2 define origin"""
     origin_bytes = grimoire_data[0:2]
-    origin = GRIMOIRE_ORIGIN_MAP[origin_bytes[0]]
+    try:
+        origin = GRIMOIRE_ORIGIN_MAP[origin_bytes[0]]
+    except Exception:
+        ## Don't have map but don't use this yet so...
+        origin = "Unknown"
+
     # print("Origin Bytes:", origin_bytes)
     # print("\tOrigin: {}".format(origin))
 
