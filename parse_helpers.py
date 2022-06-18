@@ -42,16 +42,23 @@ GRIMOIRE_ORIGIN_MAP = {
     "04": "Created",
     "08": "Traded (#1)", ## TODO: Verify
     "30": "Traded (#2)", ## TODO: Verify
+    "34": "Unknown Origin",
     "40": "Traded (in-game)",
     "44": "Traded (#3)", ## TODO: Verify
     "48": "?",
-    "80": "Traded (Guild Card)"
+    "80": "Traded (Guild Card)",
+    "88": "Traded (Guild Card #2)"
 }
 
 def parse_grimoire_origin(grimoire_data):
     """Bytes 1-2 define origin"""
     origin_bytes = grimoire_data[0:2]
-    origin = GRIMOIRE_ORIGIN_MAP[origin_bytes[0]]
+    try:
+        origin = GRIMOIRE_ORIGIN_MAP[origin_bytes[0]]
+    except Exception:
+        ## Don't have map but don't use this yet so...
+        origin = "Unknown"
+
     # print("Origin Bytes:", origin_bytes)
     # print("\tOrigin: {}".format(origin))
 
@@ -326,6 +333,9 @@ def parse_save_file(fname_path:Path):
             grimoire_data = [x.upper() for x in grimoire_data]
             # grimoire_data = "40	00	07	00	02	17	07	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	DB	00	0A	00".split("\t")
             g_info = parse_grimoire(grimoire_data)
+            print(len(grimoire_info))
+            pprint(g_info)
+            print("\n\n")
 
             if g_info:
                 grimoire_info.append(g_info)
