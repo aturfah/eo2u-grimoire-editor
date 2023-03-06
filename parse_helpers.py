@@ -79,7 +79,8 @@ GRIMOIRE_CLASS_MAP = {
     "0B": "Beast",
     "0C": "Sovereign",
     "0D": "Highlander",
-    "0E": "Fafnir"
+    "0E": "Fafnir",
+    "FF": "??? #3"
 }
 
 def parse_grimoire_class(grimoire_data):
@@ -333,9 +334,10 @@ def parse_save_file(fname_path:Path):
             grimoire_data = [x.upper() for x in grimoire_data]
             # grimoire_data = "40	00	07	00	02	17	07	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	00	DB	00	0A	00".split("\t")
             g_info = parse_grimoire(grimoire_data)
-            print(len(grimoire_info))
-            pprint(g_info)
-            print("\n\n")
+            if not "empty" in str(g_info["skill_name"]).lower():
+                print(len(grimoire_info))
+                pprint(g_info)
+                print("\n\n")
 
             if g_info:
                 grimoire_info.append(g_info)
