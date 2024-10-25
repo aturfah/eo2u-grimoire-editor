@@ -363,7 +363,7 @@ FF 00 | Blinding Curse
 6C 01 | Phys ATK Up (Passive)
 6D 01 | Phys DEF Up (Passive)
 6E 01 | Deadly Resolve (Passive)
-6F 01 | Auto Lick (Passive)
+6F 01 | Auto-Lick (Passive)
 70 01 | Loyalty Mastery (Passive)
 71 01 | Claw Mastery (Passive)
 72 01 | Preemptive Roar (Passive)
