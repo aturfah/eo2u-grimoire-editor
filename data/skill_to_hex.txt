@@ -368,7 +368,7 @@ FF 00 | Blinding Curse
 71 01 | Claw Mastery (Passive)
 72 01 | Preemptive Roar (Passive)
 73 01 | Lick Wounds
-74 01 | Self Defense
+74 01 | Self-Defense
 75 01 | Bull Charge
 76 01 | Endurance
 77 01 | Protect
@@ -584,7 +584,7 @@ FF 02 | Ripping Claws
 18 03 | Scorching Light
 19 03 | Madness Dust
 1A 03 | Evil Cry
-1B 03 | Tripple Death
+1B 03 | Triple Death
 1C 03 | Bloody Blade
 1D 03 | Sleep Pollen
 1E 03 | Dancing Petals
@@ -766,7 +766,7 @@ CD 03 | Silk Spread
 CE 03 | Silk Spit
 CF 03 | Venomous Bite
 D0 03 | Stinger
-D1 03 | Avalance
+D1 03 | Avalanche
 D2 03 | Soul Freeze
 D3 03 | Pile Bunker
 D4 03 | Buster Arm
@@ -1017,7 +1017,7 @@ C8 04 | Wind Breath
 C9 04 | Flame Sigh
 CA 04 | Frost Smile
 CB 04 | Lightning
-CC 04 | Tendil Thrash
+CC 04 | Tendril Thrash
 CD 04 | Vampiric Kiss
 CE 04 | Ancient Pollen
 CF 04 | Demon's Croon
